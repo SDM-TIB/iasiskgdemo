@@ -1,1 +1,1 @@
-web: gunicorn mulderui.wsgi
+web: gunicorn iasiskgdemo.wsgi
