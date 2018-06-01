@@ -1,0 +1,70 @@
+.CodeMirror {
+	border: 1px solid #eee;
+	height: 350px;
+}
+.CodeMirror-scroll {
+	overflow-y: hidden;
+	overflow-x: auto;
+}
+svg {
+  background-color: #FFF;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+svg:not(.active):not(.ctrl) {
+  cursor: crosshair;
+}
+path.link {
+  fill: none;
+  stroke: #000;
+  stroke-width: 4px;
+  cursor: default;
+}
+svg:not(.active):not(.ctrl) path.link {
+  cursor: pointer;
+}
+path.link.selected {
+  stroke-dasharray: 10,2;
+}
+path.link.dragline {
+  pointer-events: none;
+}
+path.link.hidden {
+  stroke-width: 0;
+}
+circle.node {
+  stroke-width: 1.5px;
+  cursor: pointer;
+}
+circle.node.reflexive {
+  stroke: #000 !important;
+  stroke-width: 2.5px;
+}
+text {
+  font: 12px sans-serif;
+  pointer-events: none;
+}
+text.id {
+  text-anchor: middle;
+  font-weight: bold;
+  word-wrap: break-word;
+}
+.card rect {
+  stroke-width: 1px;
+  stroke: #e6e6b8;
+  fill: #ffffcc;
+}
+.card p {
+  font: 300 14px "Helvetica Neue";
+  color: #000;
+}
+.selectList {
+	width: 60%;
+}
+.large {
+	width: 70%;
+}

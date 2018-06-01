@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/ui.jqgrid-bootstrap.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/codemirror.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/editor-style.css' %}" />
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-md-5">
+  <a class="navbar-brand" href="/demo">MULDER</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/demo/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/demo/visualize/">Visualize</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/demo/datasources/">Data Sources</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/demo/config/">Setting</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/demo/help/">Help</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/demo/contact/">Contact</a>
+      </li>
+    </ul>
+    <form class="form-inline mt-2 mt-md-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+ <main role="main" class="container">
+<h1> Query Text </h1>
+<div>
+<!-- ----------------- -->
+<!-- Querying tab pane -->
+<!-- ----------------- -->
+    <form class="form" role="form">
+    <div class="row">
+            <div class="form-group">
+                <textarea name="query" id="sparqlTextArea" class="form-control" rows="20"></textarea>
+            </div>
+    </div>
+    <div class="row">
+        <div class="form-group">
+            <button id="btnQuery" type="submit"  data-loading-text="Querying..." class="btn btn-success">Run Query</button>
+        </div>
+    </div>
+   </form>
+    <div class="row">
+        <table id="tblRes" class="table table-striped"   style="table-layout: fixed; word-wrap: break-word">
+            {% if proj_args %}
+            <thead>
+            <tr>
+                {% for a in proj_args %}
+                <th>{{ a }}</th>
+                {% endfor %}
+            </tr>
+            </thead>
+            {% endif %}
+            <tbody>
+            {% if results %}
+                <p>Results found</p>
+                {% for r in results %}
+                    <tr>
+                    {% for k,v in r.items %}
+                        <td>{{ v }}</td>
+
+                    {% endfor %}
+                    </tr>
+                {% endfor %}
+
+            {% endif %}
+            </tbody>
+        </table>
+    </div>
+</div>
+ </main>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/ui.jqgrid-bootstrap.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/codemirror.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/editor-style.css' %}" />
+
+
+<script type="application/ecmascript" src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
+<script type="application/ecmascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<script type="application/ecmascript" src="{% static 'js/grid.locale-en.js' %}"></script>
+<script type="application/ecmascript" src="{% static 'js/jquery.jqGrid.min.js' %}"></script>
+<script type="application/ecmascript" src="{% static 'js/main.js' %}"></script>
+<script type="application/ecmascript" src="{% static 'js/codemirror.js' %}"></script>
+<script type="application/ecmascript" src="{% static 'js/sparql.js' %}"></script>
+<script type="application/ecmascript" src="{% static 'js/matchbrackets.js' %}"></script>
+
+
+<script>
+		$.jgrid.defaults.width = 980;
+	</script>
+
+</body>
+</html>
