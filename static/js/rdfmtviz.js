@@ -50,7 +50,7 @@ $(document).ready(function() {
 				//connects subject - predicate - object -> a single triple
 				var link = {};
 				link.source = snode;
-				link.pred = "linkedto";
+				link.pred = "";
 				link.target =onode;
 				link.left = false;
 				link.right = true;
