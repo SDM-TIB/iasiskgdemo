@@ -377,12 +377,24 @@
     <script type="text/javascript">
       $("#ihla").click(function(){
           $("#dropdownButtons3").toggle('slow');
+
+          $("#dropdownButtons").css('display','none');
+          $("#drugtypes").css('display','none');
+          $("#dropdownButtonsRDFMT").css('display','none');
       });
       $("#button2").click(function(){
           $("#dropdownButtons").toggle('slow');
+
+          $("#dropdownButtons3").css('display','none');
+          $("#drugtypes").css('display','none');
+          $("#dropdownButtonsRDFMT").css('display','none');
       });
       $("#Yama").click(function(){
           $("#drugtypes").toggle('slow');
+
+          $("#dropdownButtons3").css('display','none');
+          $("#dropdownButtons").css('display','none');
+          $("#dropdownButtonsRDFMT").css('display','none');
       });
       $("#cd").click(function(){
          $("#dropdownButtonsYama").toggle('slow');
@@ -395,6 +407,10 @@
 
       $("#RDFMT").click(function(){
           $("#dropdownButtonsRDFMT").toggle('slow');
+
+          $("#dropdownButtons3").css('display','none');
+          $("#dropdownButtons").css('display','none');
+          $("#drugtypes").css('display','none');
       });
 
     </script>
