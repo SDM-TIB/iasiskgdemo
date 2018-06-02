@@ -1,244 +1,625 @@
 [
   {
-  "rootType": "http://xmlns.com/foaf/0.1/Person",
-  "linkedTo":[],
-  "predicates": [
-    {"predicate":"http://xmlns.com/foaf/0.1/name", "range":[]},
-    {"predicate":"http://xmlns.com/foaf/0.1/mbox_sha1sum", "range":[]},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/country", "range": []},
-    {"predicate":"http://purl.org/dc/elements/1.1/date","range":[]},
-    {"predicate":"http://purl.org/dc/elements/1.1/publisher","range":[]},
-    {"predicate":"http://www.w3.org/1999/02/22-rdf-syntax-ns#type","range":[]}
-  ],
-  "wrappers":[
-    {"url":"http://0.0.0.0:11892/sparql", "urlparam": "", "wrapperType":"SPARQLEndpoint",
-      "predicates":[
-        "http://xmlns.com/foaf/0.1/mbox_sha1sum",
-        "http://purl.org/dc/elements/1.1/date",
-        "http://purl.org/dc/elements/1.1/publisher",
-        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-        "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/country",
-        "http://xmlns.com/foaf/0.1/name"]}
-  ]
- },
-  {
-  "rootType": "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/Producer",
-  "linkedTo":[],
-  "predicates": [
-    {"predicate":"http://purl.org/dc/elements/1.1/publisher", "range":["http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/Producer"]},
-    {"predicate":"http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "range":[]},
-    {"predicate":"http://www.w3.org/2000/01/rdf-schema#comment", "range": []},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/country","range":[]},
-    {"predicate":"http://xmlns.com/foaf/0.1/homepage","range":[]},
-    {"predicate":"http://purl.org/dc/elements/1.1/date","range":[]},
-    {"predicate":"http://www.w3.org/2000/01/rdf-schema#label","range":[]}
-  ],
-  "wrappers":[
-    {"url":"http://0.0.0.0:11893/sparql", "urlparam": "", "wrapperType":"SPARQLEndpoint",
-      "predicates":["http://purl.org/dc/elements/1.1/publisher",
-                    "http://www.w3.org/2000/01/rdf-schema#label",
-                    "http://www.w3.org/2000/01/rdf-schema#comment",
-                    "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/country",
-                    "http://purl.org/dc/elements/1.1/date",
-                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-                    "http://xmlns.com/foaf/0.1/homepage"
-      ]
-    }
-  ]
+    "rootType": "http://project-iasis.eu/vocab/CosSim",
+    "linkedTo": [
+      "http://project-iasis.eu/vocab/Drug"
+    ],
+    "wrappers": [
+      {
+        "url": "http://localhost:11231/sparql",
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://project-iasis.eu/vocab/CosSim_similarity_value",
+          "http://project-iasis.eu/vocab/CosSim_isRelatedTo_drug",
+          "http://project-iasis.eu/vocab/cosSim_isRelatedTo_drug",
+          "http://project-iasis.eu/vocab/similarity_value"
+        ]
+      }
+    ],
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/CosSim_similarity_value",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/CosSim_isRelatedTo_drug",
+        "range": [
+          "http://project-iasis.eu/vocab/Drug"
+        ]
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/cosSim_isRelatedTo_drug",
+        "range": [
+          "http://project-iasis.eu/vocab/Drug"
+        ]
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/similarity_value",
+        "range": []
+      }
+    ]
   },
   {
-  "rootType": "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/Product",
-  "linkedTo":[
-          "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/Producer",
-          "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/ProductType",
-          "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/ProductFeature"
-  ],
-  "predicates": [
-    {"predicate":"http://www.w3.org/2000/01/rdf-schema#comment", "range":[]},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/producer", "range":["http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/Producer"]},
-    {"predicate":"http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "range": ["http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/ProductType"]},
-    {"predicate":"http://purl.org/dc/elements/1.1/publisher","range":["http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/Producer"]},
-    {"predicate":"http://www.w3.org/2000/01/rdf-schema#label","range":[]},
-    {"predicate":"http://purl.org/dc/elements/1.1/date", "range":[]},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/productFeature", "range": ["http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/ProductFeature"]},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/productPropertyTextual1","range":[]},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/productPropertyTextual2","range":[]},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/productPropertyTextual3", "range":[]},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/productPropertyTextual4", "range": []},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/productPropertyTextual5","range":[]},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/productPropertyTextual6","range":[]},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/productPropertyNumeric1","range":[]},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/productPropertyNumeric2", "range":[]},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/productPropertyNumeric3", "range": []},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/productPropertyNumeric4","range":[]},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/productPropertyNumeric5","range":[]},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/productPropertyNumeric6","range":[]}
-  ],
-  "wrappers":[
-    {"url":"http://0.0.0.0:11899/sparql", "urlparam": "", "wrapperType":"SPARQLEndpoint",
-      "predicates":["http://www.w3.org/2000/01/rdf-schema#comment",
-                    "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/productPropertyNumeric6",
-                    "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/productPropertyNumeric1",
-                    "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/productPropertyNumeric2",
-                    "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/productPropertyNumeric3",
-                    "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/productPropertyNumeric5",
-                    "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/productFeature",
-                    "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/producer",
-                    "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/productPropertyTextual1",
-                    "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/productPropertyTextual2",
-                    "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/productPropertyTextual4",
-                    "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/productPropertyTextual5",
-                    "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/productPropertyTextual6",
-                    "http://purl.org/dc/elements/1.1/publisher",
-                    "http://purl.org/dc/elements/1.1/date",
-                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-                    "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/productPropertyNumeric4",
-                    "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/productPropertyTextual3",
-                    "http://www.w3.org/2000/01/rdf-schema#label"
-      ]
-    }
-  ]
+    "rootType": "http://project-iasis.eu/vocab/Drug",
+    "linkedTo": [
+      "http://project-iasis.eu/vocab/HPO",
+      "http://project-iasis.eu/vocab/Protein",
+      "http://project-iasis.eu/vocab/Enzyme",
+      "http://project-iasis.eu/vocab/Drug"
+    ],
+    "wrappers": [
+      {
+        "url": "http://localhost:11231/sparql",
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://project-iasis.eu/vocab/label",
+          "http://project-iasis.eu/vocab/id",
+          "http://project-iasis.eu/vocab/mentioned_in",
+          "http://project-iasis.eu/vocab/drug_interactsWith_drug",
+          "http://project-iasis.eu/vocab/hasSideEffect",
+          "http://project-iasis.eu/vocab/drug_interactsWith_protein",
+          "http://project-iasis.eu/vocab/drug_interactsWith_enzyme"
+        ]
+      }
+    ],
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/label",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/id",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/mentioned_in",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/drug_interactsWith_drug",
+        "range": [
+          "http://project-iasis.eu/vocab/Drug"
+        ]
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/hasSideEffect",
+        "range": [
+          "http://project-iasis.eu/vocab/HPO"
+        ]
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/drug_interactsWith_protein",
+        "range": [
+          "http://project-iasis.eu/vocab/Protein"
+        ]
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/drug_interactsWith_enzyme",
+        "range": [
+          "http://project-iasis.eu/vocab/Enzyme"
+        ]
+      }
+    ]
   },
   {
-  "rootType": "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/ProductType",
-  "linkedTo":[],
-  "predicates": [
-    {"predicate":"http://purl.org/dc/elements/1.1/publisher", "range":[]},
-    {"predicate":"http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "range":[]},
-    {"predicate":"http://www.w3.org/2000/01/rdf-schema#comment", "range": []},
-    {"predicate":"http://www.w3.org/2000/01/rdf-schema#subClassOf","range":["http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/ProductType"]},
-    {"predicate":"http://purl.org/dc/elements/1.1/date","range":[]},
-    {"predicate":"http://www.w3.org/2000/01/rdf-schema#label","range":[]}
-  ],
-  "wrappers":[
-    {"url":"http://0.0.0.0:11898/sparql", "urlparam": "", "wrapperType":"SPARQLEndpoint",
-      "predicates":["http://purl.org/dc/elements/1.1/publisher",
-                    "http://www.w3.org/2000/01/rdf-schema#subClassOf",
-                    "http://purl.org/dc/elements/1.1/date",
-                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-                    "http://www.w3.org/2000/01/rdf-schema#comment",
-                    "http://www.w3.org/2000/01/rdf-schema#label"
-      ]
-    }
-  ]
+    "rootType": "http://project-iasis.eu/vocab/Protein",
+    "linkedTo": [],
+    "wrappers": [
+      {
+        "url": "http://localhost:11231/sparql",
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://project-iasis.eu/vocab/id",
+          "http://project-iasis.eu/vocab/source",
+          "http://project-iasis.eu/vocab/label"
+        ]
+      }
+    ],
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/id",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/source",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/label",
+        "range": []
+      }
+    ]
   },
   {
-  "rootType": "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/Vendor",
-  "linkedTo":[],
-  "predicates": [
-    {"predicate":"http://purl.org/dc/elements/1.1/publisher", "range":["http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/Vendor"]},
-    {"predicate":"http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "range":[]},
-    {"predicate":"http://www.w3.org/2000/01/rdf-schema#comment", "range": []},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/country","range":[]},
-    {"predicate":"http://xmlns.com/foaf/0.1/homepage","range":[]},
-    {"predicate":"http://www.w3.org/2000/01/rdf-schema#label", "range":[]},
-    {"predicate":"http://purl.org/dc/elements/1.1/date","range":[]}
-  ],
-  "wrappers":[
-    {"url":"http://0.0.0.0:11894/sparql", "urlparam": "", "wrapperType":"SPARQLEndpoint",
-      "predicates":["http://xmlns.com/foaf/0.1/homepage",
-        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-        "http://purl.org/dc/elements/1.1/publisher",
-        "http://www.w3.org/2000/01/rdf-schema#label",
-        "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/country",
-        "http://www.w3.org/2000/01/rdf-schema#comment",
-        "http://purl.org/dc/elements/1.1/date"
-      ]
-    }
-  ]
+    "rootType": "http://project-iasis.eu/vocab/HPO",
+    "linkedTo": [],
+    "wrappers": [
+      {
+        "url": "http://localhost:11231/sparql",
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://project-iasis.eu/vocab/label",
+          "http://project-iasis.eu/vocab/id"
+        ]
+      }
+    ],
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/label",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/id",
+        "range": []
+      }
+    ]
   },
   {
-  "rootType": "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/Offer",
-  "linkedTo":[
-            "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/Vendor",
-            "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/Product"
-  ],
-  "predicates": [
-    {"predicate":"http://purl.org/dc/elements/1.1/publisher", "range":[]},
-    {"predicate":"http://purl.org/dc/elements/1.1/date", "range":[]},
-    {"predicate":"http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "range":[]},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/product","range":["http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/Product"]},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/vendor","range":["http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/Vendor"]},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/offerWebpage","range":[]},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/price","range":[]},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/validFrom","range":[]},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/validTo","range":[]},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/deliveryDays","range":[]}
-  ],
-  "wrappers":[
-    {"url":"http://0.0.0.0:11895/sparql", "urlparam": "", "wrapperType":"SPARQLEndpoint",
-      "predicates":["http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/deliveryDays",
-        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-        "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/validTo",
-        "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/price",
-        "http://purl.org/dc/elements/1.1/date",
-        "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/vendor",
-        "http://purl.org/dc/elements/1.1/publisher",
-        "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/product",
-        "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/offerWebpage",
-        "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/validFrom"
-      ]
-    }
-  ]
+    "rootType": "http://project-iasis.eu/vocab/Tumor",
+    "linkedTo": [],
+    "wrappers": [
+      {
+        "url": "http://localhost:11231/sparql",
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://project-iasis.eu/vocab/id",
+          "http://project-iasis.eu/vocab/tumor_origin"
+        ]
+      }
+    ],
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/id",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/tumor_origin",
+        "range": []
+      }
+    ]
   },
   {
-  "rootType": "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/ProductFeature",
-  "linkedTo":[],
-  "predicates": [
-    {"predicate":"http://purl.org/dc/elements/1.1/publisher", "range":[]},
-    {"predicate":"http://purl.org/dc/elements/1.1/date", "range":[]},
-    {"predicate":"http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "range": []},
-    {"predicate":"http://www.w3.org/2000/01/rdf-schema#label","range":[]},
-    {"predicate":"http://www.w3.org/2000/01/rdf-schema#comment","range":[]}
-  ],
-  "wrappers":[
-    {"url":"http://0.0.0.0:11897/sparql", "urlparam": "", "wrapperType":"SPARQLEndpoint",
-      "predicates":[
-                  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-                  "http://purl.org/dc/elements/1.1/publisher",
-                  "http://purl.org/dc/elements/1.1/date",
-                  "http://www.w3.org/2000/01/rdf-schema#comment",
-                  "http://www.w3.org/2000/01/rdf-schema#label"
-      ]
-    }
-  ]
+    "rootType": "http://project-iasis.eu/vocab/Mutation",
+    "linkedTo": [
+      "http://project-iasis.eu/vocab/Sample",
+      "http://project-iasis.eu/vocab/Tumor",
+      "http://project-iasis.eu/vocab/Gene",
+      "http://project-iasis.eu/vocab/Transcript",
+      "http://project-iasis.eu/vocab/MutationType"
+    ],
+    "wrappers": [
+      {
+        "url": "http://localhost:11231/sparql",
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://project-iasis.eu/vocab/id",
+          "http://project-iasis.eu/vocab/mutation_NucleotideSeq",
+          "http://project-iasis.eu/vocab/mutation_cds",
+          "http://project-iasis.eu/vocab/mutation_aa",
+          "http://project-iasis.eu/vocab/mutation_strand",
+          "http://project-iasis.eu/vocab/mutation_chromosome",
+          "http://project-iasis.eu/vocab/mutation_end",
+          "http://project-iasis.eu/vocab/fathmm_prediction",
+          "http://project-iasis.eu/vocab/mutation_somatic_status",
+          "http://project-iasis.eu/vocab/mutation_isLocatedIn_transcript",
+          "http://project-iasis.eu/vocab/mutation_pepSeq",
+          "http://project-iasis.eu/vocab/fathmm_score",
+          "http://project-iasis.eu/vocab/mutation_isLocatedIn_gene",
+          "http://project-iasis.eu/vocab/mutation_start",
+          "http://project-iasis.eu/vocab/mutation_isLocatedIn_tumor",
+          "http://project-iasis.eu/vocab/mutation_study_id",
+          "http://project-iasis.eu/vocab/mutation_isClassifiedAs_mutationType",
+          "http://project-iasis.eu/vocab/mutation_isLocatedIn_sample",
+          "http://project-iasis.eu/vocab/mentioned_in"
+        ]
+      }
+    ],
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/id",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/mutation_NucleotideSeq",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/mutation_cds",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/mutation_aa",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/mutation_strand",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/mutation_chromosome",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/mutation_end",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/fathmm_prediction",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/mutation_somatic_status",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/mutation_isLocatedIn_transcript",
+        "range": [
+          "http://project-iasis.eu/vocab/Transcript"
+        ]
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/mutation_pepSeq",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/fathmm_score",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/mutation_isLocatedIn_gene",
+        "range": [
+          "http://project-iasis.eu/vocab/Gene"
+        ]
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/mutation_start",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/mutation_isLocatedIn_tumor",
+        "range": [
+          "http://project-iasis.eu/vocab/Tumor"
+        ]
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/mutation_study_id",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/mutation_isClassifiedAs_mutationType",
+        "range": [
+          "http://project-iasis.eu/vocab/MutationType"
+        ]
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/mutation_isLocatedIn_sample",
+        "range": [
+          "http://project-iasis.eu/vocab/Sample"
+        ]
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/mentioned_in",
+        "range": []
+      }
+    ]
   },
   {
-  "rootType": "http://purl.org/stuff/rev#Review",
-  "linkedTo":[
-              "http://xmlns.com/foaf/0.1/Person",
-              "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/Product"
-  ],
-  "predicates": [
-    {"predicate":"http://purl.org/dc/elements/1.1/publisher", "range":[]},
-    {"predicate":"http://purl.org/dc/elements/1.1/date", "range":[]},
-    {"predicate":"http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "range": []},
-    {"predicate":"http://purl.org/stuff/rev#text","range":[]},
-    {"predicate":"http://purl.org/dc/elements/1.1/title","range":[]},
-    {"predicate":"http://purl.org/stuff/rev#reviewer","range":["http://xmlns.com/foaf/0.1/Person"]},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/rating1","range":[]},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/rating2","range":[]},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/rating3","range":[]},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/rating4","range":[]},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/reviewDate","range":[]},
-    {"predicate":"http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/reviewFor","range":["http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/Product"]}
-  ],
-  "wrappers":[
-    {"url":"http://0.0.0.0:11896/sparql", "urlparam": "", "wrapperType":"SPARQLEndpoint",
-      "predicates":["http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/reviewFor",
-                    "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/rating3",
-                    "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/rating1",
-                    "http://purl.org/stuff/rev#reviewer",
-                    "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/reviewDate",
-                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-                    "http://purl.org/stuff/rev#text",
-                    "http://purl.org/dc/elements/1.1/date",
-                    "http://purl.org/dc/elements/1.1/title",
-                    "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/rating4",
-                    "http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/rating2",
-                    "http://purl.org/dc/elements/1.1/publisher"
-      ]
-    }
-  ]
+    "rootType": "http://project-iasis.eu/vocab/Sample",
+    "linkedTo": [
+      "http://project-iasis.eu/vocab/Tumor"
+    ],
+    "wrappers": [
+      {
+        "url": "http://localhost:11231/sparql",
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://project-iasis.eu/vocab/label",
+          "http://project-iasis.eu/vocab/id",
+          "http://project-iasis.eu/vocab/source",
+          "http://project-iasis.eu/vocab/tissueSubtype1",
+          "http://project-iasis.eu/vocab/primaryHistology",
+          "http://project-iasis.eu/vocab/sample_isTakenFrom_tumor",
+          "http://project-iasis.eu/vocab/age",
+          "http://project-iasis.eu/vocab/primaryTissue",
+          "http://project-iasis.eu/vocab/histologySubtype1"
+        ]
+      }
+    ],
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/label",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/id",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/source",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/tissueSubtype1",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/primaryHistology",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/sample_isTakenFrom_tumor",
+        "range": [
+          "http://project-iasis.eu/vocab/Tumor"
+        ]
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/age",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/primaryTissue",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/histologySubtype1",
+        "range": []
+      }
+    ]
+  },
+  {
+    "rootType": "http://project-iasis.eu/vocab/Gene",
+    "linkedTo": [
+      "http://project-iasis.eu/vocab/Sample"
+    ],
+    "wrappers": [
+      {
+        "url": "http://localhost:11231/sparql",
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://project-iasis.eu/vocab/label",
+          "http://project-iasis.eu/vocab/id",
+          "http://project-iasis.eu/vocab/source",
+          "http://project-iasis.eu/vocab/gene_isRelatedTo_sample",
+          "http://project-iasis.eu/vocab/cds_length"
+        ]
+      }
+    ],
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/label",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/id",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/source",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/gene_isRelatedTo_sample",
+        "range": [
+          "http://project-iasis.eu/vocab/Sample"
+        ]
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/cds_length",
+        "range": []
+      }
+    ]
+  },
+  {
+    "rootType": "http://project-iasis.eu/vocab/MutationType",
+    "linkedTo": [],
+    "wrappers": [
+      {
+        "url": "http://localhost:11231/sparql",
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://project-iasis.eu/vocab/label"
+        ]
+      }
+    ],
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/label",
+        "range": []
+      }
+    ]
+  },
+  {
+    "rootType": "http://project-iasis.eu/vocab/Transcript",
+    "linkedTo": [
+      "http://project-iasis.eu/vocab/Gene",
+      "http://project-iasis.eu/vocab/Protein"
+    ],
+    "wrappers": [
+      {
+        "url": "http://localhost:11231/sparql",
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://project-iasis.eu/vocab/transcript_isRelatedTo_transcription",
+          "http://project-iasis.eu/vocab/transcript_isRelatedTo_gene",
+          "http://project-iasis.eu/vocab/translates_as"
+        ]
+      }
+    ],
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/transcript_isRelatedTo_transcription",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/transcript_isRelatedTo_gene",
+        "range": [
+          "http://project-iasis.eu/vocab/Gene"
+        ]
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/translates_as",
+        "range": [
+          "http://project-iasis.eu/vocab/Protein"
+        ]
+      }
+    ]
+  },
+  {
+    "rootType": "http://project-iasis.eu/vocab/Sicomp",
+    "linkedTo": [
+      "http://project-iasis.eu/vocab/Drug"
+    ],
+    "wrappers": [
+      {
+        "url": "http://localhost:11231/sparql",
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://project-iasis.eu/vocab/sicomp_isRelatedTo_drug",
+          "http://project-iasis.eu/vocab/simcomp_similarity_value"
+        ]
+      }
+    ],
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/sicomp_isRelatedTo_drug",
+        "range": [
+          "http://project-iasis.eu/vocab/Drug"
+        ]
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/simcomp_similarity_value",
+        "range": []
+      }
+    ]
+  },
+  {
+    "rootType": "http://project-iasis.eu/vocab/Enzyme",
+    "linkedTo": [],
+    "wrappers": [
+      {
+        "url": "http://localhost:11231/sparql",
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://project-iasis.eu/vocab/label",
+          "http://project-iasis.eu/vocab/id"
+        ]
+      }
+    ],
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/label",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/id",
+        "range": []
+      }
+    ]
+  },
+  {
+    "rootType": "http://project-iasis.eu/vocab/SmithWatermanSim",
+    "linkedTo": [
+      "http://project-iasis.eu/vocab/Enzyme"
+    ],
+    "wrappers": [
+      {
+        "url": "http://localhost:11231/sparql",
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://project-iasis.eu/vocab/smithWaterman_similarity_value",
+          "http://project-iasis.eu/vocab/smithWatermanSim_isRelatedTo_enzyme"
+        ]
+      }
+    ],
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/smithWaterman_similarity_value",
+        "range": []
+      },
+      {
+        "predicate": "http://project-iasis.eu/vocab/smithWatermanSim_isRelatedTo_enzyme",
+        "range": [
+          "http://project-iasis.eu/vocab/Enzyme"
+        ]
+      }
+    ]
   }
 ]
