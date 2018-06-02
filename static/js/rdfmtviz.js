@@ -80,43 +80,7 @@ function drawWhyDAG(nodes, links){
     colors = d3.scale.category10();
 	//clear explanation body element
 	$('#expBody').html("");
-     // line displayed when dragging new nodes
-	  var drag_line = svg.append('svg:path')
-	    .attr('class', 'link dragline hidden')
-	    .attr('d', 'M0,0L0,0');
 
-	  // handles to link and node element groups
-	  var path = svg.append('svg:g').selectAll('path'),
-	      circle = svg.append('svg:g').selectAll('g');
-
-
-	//mouse event vars
-	  var selected_node = null,
-	     selected_link = null;
-	//update force layout (called automatically each iteration)
-	  function tick() {
-	    // draw directed edges with proper padding from node centers
-	    path.attr('d', function(d) {
-	      var deltaX = d.target.x - d.source.x,
-	          deltaY = d.target.y - d.source.y,
-	          dist = Math.sqrt(deltaX * deltaX + deltaY * deltaY),
-	          normX = deltaX / dist,
-	          normY = deltaY / dist,
-	          sourcePadding = d.left ? 17 : 12,
-	          targetPadding = d.right ? 17 : 12,
-	          sourceX = d.source.x + (sourcePadding * normX),
-	          sourceY = d.source.y + (sourcePadding * normY),
-	          targetX = d.target.x - (targetPadding * normX),
-	          targetY = d.target.y - (targetPadding * normY);
-	      return 'M' + sourceX + ',' + sourceY + 'L' + targetX + ',' + targetY;
-	    });
-		path.attr('id', function(d){
-			  return d.id;
-		});
-	    circle.attr('transform', function(d) {
-	      return 'translate(' + d.x + ',' + d.y + ')';
-	    });
-	  }
 
 	var svg = d3.select('#expBody')
 		.append('svg')
@@ -157,7 +121,43 @@ function drawWhyDAG(nodes, links){
 	      .attr('fill', '#000');
 
 
+    // line displayed when dragging new nodes
+	  var drag_line = svg.append('svg:path')
+	    .attr('class', 'link dragline hidden')
+	    .attr('d', 'M0,0L0,0');
 
+	  // handles to link and node element groups
+	  var path = svg.append('svg:g').selectAll('path'),
+	      circle = svg.append('svg:g').selectAll('g');
+
+
+	//mouse event vars
+	  var selected_node = null,
+	     selected_link = null;
+	//update force layout (called automatically each iteration)
+	  function tick() {
+	    // draw directed edges with proper padding from node centers
+	    path.attr('d', function(d) {
+	      var deltaX = d.target.x - d.source.x,
+	          deltaY = d.target.y - d.source.y,
+	          dist = Math.sqrt(deltaX * deltaX + deltaY * deltaY),
+	          normX = deltaX / dist,
+	          normY = deltaY / dist,
+	          sourcePadding = d.left ? 17 : 12,
+	          targetPadding = d.right ? 17 : 12,
+	          sourceX = d.source.x + (sourcePadding * normX),
+	          sourceY = d.source.y + (sourcePadding * normY),
+	          targetX = d.target.x - (targetPadding * normX),
+	          targetY = d.target.y - (targetPadding * normY);
+	      return 'M' + sourceX + ',' + sourceY + 'L' + targetX + ',' + targetY;
+	    });
+		path.attr('id', function(d){
+			  return d.id;
+		});
+	    circle.attr('transform', function(d) {
+	      return 'translate(' + d.x + ',' + d.y + ')';
+	    });
+	  }
 
 
 	//update graph (called when needed)
