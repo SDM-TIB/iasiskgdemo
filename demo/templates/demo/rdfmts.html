@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <title>FedQ-LD</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
+{% load static %}
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}" />
 
 <style type="text/css">
 .CodeMirror {
@@ -85,9 +87,10 @@ text.id {
 
  </div>
  {% load static %}
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+<script type="application/ecmascript" src="{% static 'js/popper.min.js' %}"></script>
+    <script type="application/ecmascript" src="{% static 'js/jquery.min.js' %}"></script>
+    <script type="application/ecmascript" src="{% static 'js/jquery-ui.min.js' %}"></script>
+    <script type="application/ecmascript" src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 
 <script src="http://cpettitt.github.io/project/dagre-d3/latest/dagre-d3.js"></script>
