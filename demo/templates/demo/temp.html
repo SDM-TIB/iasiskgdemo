@@ -92,14 +92,14 @@
               <button id="query" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="background-color: #59abb2;">Queries
               </button>
               <ul class="dropdown-menu">
-                <li onclick="setDataset('q1')"><a>Query 1: Toxicity: Drugs that interacts with Docetaxel</a></li>
-                <li onclick="setDataset('q2')"><a>Query 2: Toxicity: Side Effects that interacts with Docetaxel</a></li>
-                <li onclick="setDataset('q3')"><a>Query 3: Toxicity: Proteins of the families CYP, ABC, and CASP that interact with the drug</a></li>
+                <li onclick="setDataset('q1')"><a>Query 1: Drugs that interacts with Docetaxel</a></li>
+                <li onclick="setDataset('q2')"><a>Query 2: Side Effects that interacts with Docetaxel</a></li>
+                <li onclick="setDataset('q3')"><a>Query 3: Proteins of the families CYP, ABC, and CASP that interact with the drug</a></li>
               </ul>
                 <div id="querydetail">
-                    <p id="q1" style="display: none;">
-                       <pre>
-                    select distinct ?o8 ?o9 where {
+                    <div id="q1" style="display: none;">
+                       <div style="white-space: pre;text-align: left">
+                    SELECT DISTINCT ?o8 ?o9 WHERE {
                           ?s  &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt;  &lt;http://project-iasis.eu/vocab/Drug&gt; .
                           ?s &lt;http://project-iasis.eu/vocab/label&gt; 'docetaxel' .
                           ?s &lt;http://project-iasis.eu/vocab/id&gt; ?o1.
@@ -112,11 +112,11 @@
                           ?s &lt;http://project-iasis.eu/vocab/drug_interactsWith_drug&gt; ?o8.
                           ?o8 &lt;http://project-iasis.eu/vocab/label&gt; ?o9.
                         }
-                        </pre>
-                    </p>
-                    <p id="q2" style="display: none;">
-                       <pre>
-                    select distinct ?o4 ?o7 where {
+                        </div>
+                    </div>
+                    <div id="q2" style="display: none;">
+                       <div style="white-space: pre;text-align: left">
+                    SELECT DISTINCT ?o4 ?o7 WHERE {
                           ?s  &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt;  &lt;http://project-iasis.eu/vocab/Drug&gt; .
                           ?s &lt;http://project-iasis.eu/vocab/label&gt; 'docetaxel' .
                           ?s &lt;http://project-iasis.eu/vocab/id&gt; ?o1.
@@ -129,25 +129,27 @@
                           ?s &lt;http://project-iasis.eu/vocab/drug_interactsWith_drug&gt; ?o8.
                           ?o8 &lt;http://project-iasis.eu/vocab/label&gt; ?o9.
                         }
-                        </pre>
-                    </p>
-                    <p id="q3" style="display: none;">
-                       <pre>
-                    select distinct ?o5 where {
-                          ?s  &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt;  &lt;http://project-iasis.eu/vocab/Drug&gt; .
-                          ?s &lt;http://project-iasis.eu/vocab/label&gt; 'docetaxel' .
-                          ?s &lt;http://project-iasis.eu/vocab/id&gt; ?o1.
-                          ?s &lt;http://project-iasis.eu/vocab/mentioned_in&gt; ?o2 .
-                          ?s &lt;http://project-iasis.eu/vocab/drug_interactsWith_enzyme&gt; ?o3 .
-                          ?o3 &lt;http://project-iasis.eu/vocab/label&gt; ?o6.
-                          ?s &lt;http://project-iasis.eu/vocab/hasSideEffect&gt; ?o4.
-                          ?o4 &lt;http://project-iasis.eu/vocab/label&gt; ?o7.
-                          ?s &lt;http://project-iasis.eu/vocab/drug_interactsWith_protein&gt; ?o5 .
-                          ?s &lt;http://project-iasis.eu/vocab/drug_interactsWith_drug&gt; ?o8.
-                          ?o8 &lt;http://project-iasis.eu/vocab/label&gt; ?o9.
-                        }
-                        </pre>
-                    </p>
+                        </div>
+                    </div>
+                    <div id="q3" style="display: none;">
+
+                           <div style="white-space: pre;text-align: left">
+                            SELECT DISTINCT ?o5 WHERE {
+                                  ?s  &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt;  &lt;http://project-iasis.eu/vocab/Drug&gt; .
+                                  ?s &lt;http://project-iasis.eu/vocab/label&gt; 'docetaxel' .
+                                  ?s &lt;http://project-iasis.eu/vocab/id&gt; ?o1.
+                                  ?s &lt;http://project-iasis.eu/vocab/mentioned_in&gt; ?o2 .
+                                  ?s &lt;http://project-iasis.eu/vocab/drug_interactsWith_enzyme&gt; ?o3 .
+                                  ?o3 &lt;http://project-iasis.eu/vocab/label&gt; ?o6.
+                                  ?s &lt;http://project-iasis.eu/vocab/hasSideEffect&gt; ?o4.
+                                  ?o4 &lt;http://project-iasis.eu/vocab/label&gt; ?o7.
+                                  ?s &lt;http://project-iasis.eu/vocab/drug_interactsWith_protein&gt; ?o5 .
+                                  ?s &lt;http://project-iasis.eu/vocab/drug_interactsWith_drug&gt; ?o8.
+                                  ?o8 &lt;http://project-iasis.eu/vocab/label&gt; ?o9.
+                                }
+                               </div>
+
+                    </div>
 
                 </div>
             </div>
@@ -173,7 +175,93 @@
                 <li onclick="setDataset('mq3')"><a>Query 3: Side Effects of docetaxel and mutations that can impact effectivenses </a></li>
                 <li onclick="setDataset('mq4')"><a>Query 4: Mutations associated with proteins that interact with docetaxel and with the drugs that interacts with docetaxel</a></li>
               </ul>
-                <p id="mutquerydetail"></p>
+                <div id="mutquerydetail">
+                    <div id="mq1" style="display: none;">
+                       <div style="white-space: pre;text-align: left">
+                    SELECT DISTINCT ?o9 ?o10 ?o11 ?o12 ?o13 ?o14 ?o15 where {
+                           ?s  &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt;  &lt;http://project-iasis.eu/vocab/Mutation&gt; .
+                           ?s  &lt;http://project-iasis.eu/vocab/mutation_chromosome&gt; ?o9 .
+                           ?s  &lt;http://project-iasis.eu/vocab/mutation_start&gt; ?o10.
+                           ?s  &lt;http://project-iasis.eu/vocab/mutation_NucleotideSeq&gt; ?o11.
+                           ?s  &lt;http://project-iasis.eu/vocab/mutation_isClassifiedAs_mutationType&gt; ?o12.
+                           ?s  &lt;http://project-iasis.eu/vocab/mutation_somatic_status&gt; ?o13.
+                           ?s  &lt;http://project-iasis.eu/vocab/mutation_cds&gt; ?o14.
+                           ?s  &lt;http://project-iasis.eu/vocab/mutation_aa&gt; ?o15.
+                           ?s  &lt;http://project-iasis.eu/vocab/mutation_isLocatedIn_transcript&gt; ?o7 .
+                           ?o7 &lt;http://project-iasis.eu/vocab/translates_as&gt; ?o1 .
+                           ?o1 &lt;http://project-iasis.eu/vocab/id&gt; ?o2 .
+                           ?o4 &lt;http://project-iasis.eu/vocab/drug_interactsWith_protein&gt; ?o1 .
+                           ?o4 &lt;http://project-iasis.eu/vocab/id&gt; ?o5 .
+                           ?o4 &lt;http://project-iasis.eu/vocab/label&gt; 'docetaxel'
+                           }
+                        </div>
+                    </div>
+                    <div id="mq2" style="display: none;">
+                       <div style="white-space: pre;text-align: left">
+                    SELECT DISTINCT ?s ?o20  ?o21 WHERE {
+                           ?s  &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt;  &lt;http://project-iasis.eu/vocab/Mutation&gt; .
+                           ?s  &lt;http://project-iasis.eu/vocab/mutation_chromosome&gt; ?o9 .
+                           ?s  &lt;http://project-iasis.eu/vocab/mutation_start&gt; ?o10.
+                           ?s  &lt;http://project-iasis.eu/vocab/mutation_NucleotideSeq&gt; ?o11.
+                           ?s  &lt;http://project-iasis.eu/vocab/mutation_isClassifiedAs_mutationType&gt; ?o12.
+                           ?s  &lt;http://project-iasis.eu/vocab/mutation_somatic_status&gt; ?o13.
+                           ?s  &lt;http://project-iasis.eu/vocab/mutation_cds&gt; ?o14.
+                           ?s  &lt;http://project-iasis.eu/vocab/mutation_aa&gt; ?o15.
+                           ?s  &lt;http://project-iasis.eu/vocab/mutation_isLocatedIn_transcript&gt; ?o7 .
+                           ?o7 &lt;http://project-iasis.eu/vocab/translates_as&gt; ?o1 .
+                           ?o1 &lt;http://project-iasis.eu/vocab/id&gt; ?o2 .
+                           ?o4 &lt;http://project-iasis.eu/vocab/drug_interactsWith_protein&gt; ?o1 .
+                           ?o4 &lt;http://project-iasis.eu/vocab/id&gt; ?o5 .
+                           ?o4 &lt;http://project-iasis.eu/vocab/label&gt; 'docetaxel' .
+                           ?o4 &lt;http://project-iasis.eu/vocab/hasSideEffect&gt; ?o20 .
+                           ?o4 &lt;http://project-iasis.eu/vocab/drug_interactsWith_drug&gt; ?o21
+                           }
+                        </div>
+                    </div>
+                    <div id="mq3" style="display: none;">
+
+                     <div style="white-space: pre;text-align: left">
+                     SELECT DISTINCT ?s ?o20  ?o21 WHERE {
+                           ?s  &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt;  &lt;http://project-iasis.eu/vocab/Mutation&gt; .
+                           ?s  &lt;http://project-iasis.eu/vocab/mutation_chromosome&gt; ?o9 .
+                           ?s  &lt;http://project-iasis.eu/vocab/mutation_start&gt; ?o10.
+                           ?s  &lt;http://project-iasis.eu/vocab/mutation_NucleotideSeq&gt; ?o11.
+                           ?s  &lt;http://project-iasis.eu/vocab/mutation_isClassifiedAs_mutationType&gt; ?o12.
+                           ?s  &lt;http://project-iasis.eu/vocab/mutation_somatic_status&gt; ?o13.
+                           ?s  &lt;http://project-iasis.eu/vocab/mutation_cds&gt; ?o14.
+                           ?s  &lt;http://project-iasis.eu/vocab/mutation_aa&gt; ?o15.
+                           ?s  &lt;http://project-iasis.eu/vocab/mutation_isLocatedIn_transcript&gt; ?o7 .
+                           ?o7 &lt;http://project-iasis.eu/vocab/translates_as&gt; ?o1 .
+                           ?o1 &lt;http://project-iasis.eu/vocab/id&gt; ?o2 .
+                           ?o4 &lt;http://project-iasis.eu/vocab/drug_interactsWith_protein&gt; ?o1 .
+                           ?o4 &lt;http://project-iasis.eu/vocab/id&gt; ?o5 .
+                           ?o4 &lt;http://project-iasis.eu/vocab/label&gt; 'docetaxel' .
+                           ?o4 &lt;http://project-iasis.eu/vocab/hasSideEffect&gt; ?o20 .
+                           ?o4 &lt;http://project-iasis.eu/vocab/drug_interactsWith_drug&gt; ?o21
+                       }
+                               </div>
+
+                    </div>
+                    <div id="mq4" style="display: none;">
+
+                     <div style="white-space: pre;text-align: left">
+                     SSELECT DISTINCT ?s  where {
+                           ?s  &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://project-iasis.eu/vocab/Mutation&gt; .
+                           ?s  &lt;http://project-iasis.eu/vocab/mutation_isLocatedIn_transcript&gt; ?o7 .
+                           ?o7 &lt;http://project-iasis.eu/vocab/translates_as&gt; ?o1 .
+                           ?o1 &lt;http://project-iasis.eu/vocab/label&gt; ?o8 .
+                           ?o4 &lt;http://project-iasis.eu/vocab/drug_interactsWith_protein&gt; ?o1 .
+                           ?o4 &lt;http://project-iasis.eu/vocab/id&gt; ?o5 .
+                           ?o4 &lt;http://project-iasis.eu/vocab/label&gt; 'docetaxel' .
+                           ?o4 &lt;http://project-iasis.eu/vocab/hasSideEffect&gt; ?o20 .
+                           ?o4 &lt;http://project-iasis.eu/vocab/drug_interactsWith_drug&gt; ?o6 .
+                           ?o6 &lt;http://project-iasis.eu/vocab/drug_interactsWith_protein&gt; ?o1
+
+                           }
+                               </div>
+
+                    </div>
+                </div>
             </div>
             </div>
             <br>

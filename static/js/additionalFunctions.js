@@ -26,9 +26,31 @@ function setDataset(a){
         $("#q3").show();
 
 	} else if (a == 'mq1'){
-		document.getElementById("mutquerydetail").innerHTML = 'Query 4';
 		document.getElementById("mutquery").innerHTML = 'Query 1: Potential Mutations that may impact the effectiveness of docetaxel';
+		$("#mq1").show();
+        $("#mq2").hide();
+        $("#mq3").hide();
+        $("#mq4").hide();
+	} else if (a == 'mq2'){
+		document.getElementById("mutquery").innerHTML = 'Query 2: Potential Mutations that may impact the effectiveness of docetaxel and side effects and drug advarse events';
+		$("#mq1").hide();
+        $("#mq2").show();
+        $("#mq3").hide();
+        $("#mq4").hide();
+	}  else if (a == 'mq3'){
+		document.getElementById("mutquery").innerHTML = 'Query 3: Side Effects of docetaxel and mutations that can impact effectivenses';
+		$("#mq1").hide();
+        $("#mq2").hide();
+        $("#mq3").show();
+        $("#mq4").hide();
+	}  else if (a == 'mq4'){
+		document.getElementById("mutquery").innerHTML = 'Query 4: Mutations associated with proteins that interact with docetaxel and with the drugs that interacts with docetaxel';
+		$("#mq1").hide();
+        $("#mq2").hide();
+        $("#mq3").hide();
+        $("#mq4").show();
 	}
+
 }
 
 function setDatasetButton3(a){
