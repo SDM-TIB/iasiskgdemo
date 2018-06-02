@@ -8,19 +8,19 @@ function setDataset(a){
 
 	dataset = a;
 	if (a == 'q1'){
-		document.getElementById("query").innerHTML = 'Query 1: Toxicity: Drugs that interacts with Docetaxel';
+		document.getElementById("query").innerHTML = 'Query 1: Drugs that interacts with Docetaxel';
         $("#q1").show();
         $("#q2").hide();
         $("#q3").hide();
 
 	} else if (a == 'q2'){
-		document.getElementById("query").innerHTML = 'Query 2: Toxicity: Side Effects that interacts with Docetaxel';
+		document.getElementById("query").innerHTML = 'Query 2: Side Effects that interacts with Docetaxel';
 		$("#q1").hide();
         $("#q2").show();
         $("#q3").hide();
 
 	} else if (a == 'q3'){
-		document.getElementById("query").innerHTML = 'Query 3: Toxicity: Proteins of the families CYP, ABC, and CASP that interact with the drug';
+		document.getElementById("query").innerHTML = 'Query 3: Proteins of the families CYP, ABC, and CASP that interact with the drug';
 		$("#q1").hide();
         $("#q2").hide();
         $("#q3").show();

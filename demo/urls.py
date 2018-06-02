@@ -29,5 +29,6 @@ urlpatterns = [
 
     path('style.cycss', views.stylecysss),
     path('bayer', views.bayer, name="bayer"),
-
+    path('rdfmts', views.rdfmts, name="rdfmts"),
+    path('iasisrdfmts.json', views.iasisrdfmts, name="iasisrdfmts"),
 ]

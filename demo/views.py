@@ -66,3 +66,9 @@ def semep190drugs(request):
 def semep190js(request):
     return render(request, 'demo/semEP_190.js')
 
+def rdfmts(request):
+    return render(request, 'demo/rdfmts.html')
+
+
+def iasisrdfmts(request):
+    return render(request, 'demo/iasisrdfmts.json')
