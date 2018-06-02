@@ -8,15 +8,23 @@ function setDataset(a){
 
 	dataset = a;
 	if (a == 'q1'){
-		document.getElementById("querydetail").innerHTML = 'Query 1';
 		document.getElementById("query").innerHTML = 'Query 1: Toxicity: Drugs that interacts with Docetaxel';
+        $("#q1").show();
+        $("#q2").hide();
+        $("#q3").hide();
 
 	} else if (a == 'q2'){
-		document.getElementById("querydetail").innerHTML = 'Query 2';
 		document.getElementById("query").innerHTML = 'Query 2: Toxicity: Side Effects that interacts with Docetaxel';
+		$("#q1").hide();
+        $("#q2").show();
+        $("#q3").hide();
+
 	} else if (a == 'q3'){
-		document.getElementById("querydetail").innerHTML = 'Query 3';
 		document.getElementById("query").innerHTML = 'Query 3: Toxicity: Proteins of the families CYP, ABC, and CASP that interact with the drug';
+		$("#q1").hide();
+        $("#q2").hide();
+        $("#q3").show();
+
 	} else if (a == 'mq1'){
 		document.getElementById("mutquerydetail").innerHTML = 'Query 4';
 		document.getElementById("mutquery").innerHTML = 'Query 1: Potential Mutations that may impact the effectiveness of docetaxel';

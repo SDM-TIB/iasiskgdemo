@@ -96,7 +96,60 @@
                 <li onclick="setDataset('q2')"><a>Query 2: Toxicity: Side Effects that interacts with Docetaxel</a></li>
                 <li onclick="setDataset('q3')"><a>Query 3: Toxicity: Proteins of the families CYP, ABC, and CASP that interact with the drug</a></li>
               </ul>
-                <p id="querydetail"></p>
+                <div id="querydetail">
+                    <p id="q1" style="display: none;">
+                       <pre>
+                    select distinct ?o8 ?o9 where {
+                          ?s  &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt;  &lt;http://project-iasis.eu/vocab/Drug&gt; .
+                          ?s &lt;http://project-iasis.eu/vocab/label&gt; 'docetaxel' .
+                          ?s &lt;http://project-iasis.eu/vocab/id&gt; ?o1.
+                          ?s &lt;http://project-iasis.eu/vocab/mentioned_in&gt; ?o2 .
+                          ?s &lt;http://project-iasis.eu/vocab/drug_interactsWith_enzyme&gt; ?o3 .
+                          ?o3 &lt;http://project-iasis.eu/vocab/label&gt; ?o6.
+                          ?s &lt;http://project-iasis.eu/vocab/hasSideEffect&gt; ?o4.
+                          ?o4 &lt;http://project-iasis.eu/vocab/label&gt; ?o7.
+                          ?s &lt;http://project-iasis.eu/vocab/drug_interactsWith_protein&gt; ?o5 .
+                          ?s &lt;http://project-iasis.eu/vocab/drug_interactsWith_drug&gt; ?o8.
+                          ?o8 &lt;http://project-iasis.eu/vocab/label&gt; ?o9.
+                        }
+                        </pre>
+                    </p>
+                    <p id="q2" style="display: none;">
+                       <pre>
+                    select distinct ?o4 ?o7 where {
+                          ?s  &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt;  &lt;http://project-iasis.eu/vocab/Drug&gt; .
+                          ?s &lt;http://project-iasis.eu/vocab/label&gt; 'docetaxel' .
+                          ?s &lt;http://project-iasis.eu/vocab/id&gt; ?o1.
+                          ?s &lt;http://project-iasis.eu/vocab/mentioned_in&gt; ?o2 .
+                          ?s &lt;http://project-iasis.eu/vocab/drug_interactsWith_enzyme&gt; ?o3 .
+                          ?o3 &lt;http://project-iasis.eu/vocab/label&gt; ?o6.
+                          ?s &lt;http://project-iasis.eu/vocab/hasSideEffect&gt; ?o4.
+                          ?o4 &lt;http://project-iasis.eu/vocab/label&gt; ?o7.
+                          ?s &lt;http://project-iasis.eu/vocab/drug_interactsWith_protein&gt; ?o5 .
+                          ?s &lt;http://project-iasis.eu/vocab/drug_interactsWith_drug&gt; ?o8.
+                          ?o8 &lt;http://project-iasis.eu/vocab/label&gt; ?o9.
+                        }
+                        </pre>
+                    </p>
+                    <p id="q3" style="display: none;">
+                       <pre>
+                    select distinct ?o5 where {
+                          ?s  &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt;  &lt;http://project-iasis.eu/vocab/Drug&gt; .
+                          ?s &lt;http://project-iasis.eu/vocab/label&gt; 'docetaxel' .
+                          ?s &lt;http://project-iasis.eu/vocab/id&gt; ?o1.
+                          ?s &lt;http://project-iasis.eu/vocab/mentioned_in&gt; ?o2 .
+                          ?s &lt;http://project-iasis.eu/vocab/drug_interactsWith_enzyme&gt; ?o3 .
+                          ?o3 &lt;http://project-iasis.eu/vocab/label&gt; ?o6.
+                          ?s &lt;http://project-iasis.eu/vocab/hasSideEffect&gt; ?o4.
+                          ?o4 &lt;http://project-iasis.eu/vocab/label&gt; ?o7.
+                          ?s &lt;http://project-iasis.eu/vocab/drug_interactsWith_protein&gt; ?o5 .
+                          ?s &lt;http://project-iasis.eu/vocab/drug_interactsWith_drug&gt; ?o8.
+                          ?o8 &lt;http://project-iasis.eu/vocab/label&gt; ?o9.
+                        }
+                        </pre>
+                    </p>
+
+                </div>
             </div>
             </div>
             <br>
