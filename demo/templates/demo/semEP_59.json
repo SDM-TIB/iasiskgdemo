@@ -1,0 +1,101 @@
+{
+"format_version" : "1.0",
+"generated_by" : "cytoscape-3.2.0",
+"target_cytoscapejs_version" : "~2.1",
+"data" : {
+"selected" : true,
+"__Annotations" : [ ],
+"shared_name" : "WineCheeseNetwork",
+"SUID" : 52,
+"name" : "WineCheeseNetwork"
+},
+"elements" : {
+"nodes" : [{
+"data" : {
+"id":"vinorelbine1",
+"selected":false,
+"cytoscape_alias_list":["vinorelbine"],
+"canonicalName": "vinorelbine",
+"SUID":2,
+"NodeType": "RedWine",
+"name": "vinorelbine",
+"shared_name": "vinorelbine"
+},
+"position" : {
+	"x" : 1000,
+	"y" : 1000
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"Cytochrome P450 family 3 subfamily A member 51",
+"selected":false,
+"cytoscape_alias_list":["Cytochrome P450 family 3 subfamily A member 5"],
+"canonicalName": "Cytochrome P450 family 3 subfamily A member 5",
+"SUID":3,
+"NodeType": "WhiteWine",
+"name": "Cytochrome P450 family 3 subfamily A member 5",
+"shared_name": "Cytochrome P450 family 3 subfamily A member 5"
+},
+"position" : {
+	"x" : 2000,
+	"y" : 1000
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"Cytochrome P450 family 3 subfamily A member 41",
+"selected":false,
+"cytoscape_alias_list":["Cytochrome P450 family 3 subfamily A member 4"],
+"canonicalName": "Cytochrome P450 family 3 subfamily A member 4",
+"SUID":4,
+"NodeType": "WhiteWine",
+"name": "Cytochrome P450 family 3 subfamily A member 4",
+"shared_name": "Cytochrome P450 family 3 subfamily A member 4"
+},
+"position" : {
+	"x" : 2000,
+	"y" : 1050
+},
+"selected":false
+}
+
+],
+"edges" : [
+{"data" : {
+"id" : "1",
+"source" : "vinorelbine1",
+"target" : "Cytochrome P450 family 3 subfamily A member 51",
+"selected" : false,
+"canonicalName" : "vinorelbine1 (Interactive) Cytochrome P450 family 3 subfamily A member 51",
+"SUID" : 1,
+"name" : "vinorelbine1 (Interactive) Cytochrome P450 family 3 subfamily A member 51",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "vinorelbine1 (Interactive) Cytochrome P450 family 3 subfamily A member 51"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "2",
+"source" : "vinorelbine1",
+"target" : "Cytochrome P450 family 3 subfamily A member 41",
+"selected" : false,
+"canonicalName" : "vinorelbine1 (Interactive) Cytochrome P450 family 3 subfamily A member 41",
+"SUID" : 2,
+"name" : "vinorelbine1 (Interactive) Cytochrome P450 family 3 subfamily A member 41",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "vinorelbine1 (Interactive) Cytochrome P450 family 3 subfamily A member 41"
+},
+"selected" : false
+}
+
+]
+}
+}

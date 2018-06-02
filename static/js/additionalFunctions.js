@@ -3,16 +3,23 @@ var dataset3 = 0
 var ml = 0
 var machine = 0
 
+
 function setDataset(a){
+
 	dataset = a;
-	if (a == 'e'){
-		document.getElementById("dataset").innerHTML = 'Enzyme';
-	} else if (a == 'ic'){
-		document.getElementById("dataset").innerHTML = 'ION Channel';
-	} else if (a == 'nr'){
-		document.getElementById("dataset").innerHTML = 'Nuclear Receptor';
-	} else if (a == 'gpcr'){
-		document.getElementById("dataset").innerHTML = 'GPCR';
+	if (a == 'q1'){
+		document.getElementById("querydetail").innerHTML = 'Query 1';
+		document.getElementById("query").innerHTML = 'Query 1: Toxicity: Drugs that interacts with Docetaxel';
+
+	} else if (a == 'q2'){
+		document.getElementById("querydetail").innerHTML = 'Query 2';
+		document.getElementById("query").innerHTML = 'Query 2: Toxicity: Side Effects that interacts with Docetaxel';
+	} else if (a == 'q3'){
+		document.getElementById("querydetail").innerHTML = 'Query 3';
+		document.getElementById("query").innerHTML = 'Query 3: Toxicity: Proteins of the families CYP, ABC, and CASP that interact with the drug';
+	} else if (a == 'mq1'){
+		document.getElementById("mutquerydetail").innerHTML = 'Query 4';
+		document.getElementById("mutquery").innerHTML = 'Query 1: Potential Mutations that may impact the effectiveness of docetaxel';
 	}
 }
 

@@ -68,68 +68,35 @@
     <header class="masthead">
       <div class="container">
         <div class="intro-text" style="padding-top: 160px">
-          <div class="intro-heading">MULDER Demo</div>
+          <div class="intro-heading">IASIS-KG Demo</div>
           <div>
           <!--a class="btn btn-xl js-scroll-trigger" style="width:805px" href="http://vocol.iais.fraunhofer.de/iasis/docs/visualization.html">iASiS Unified Schema</a> &#160;&#160;
           <button class="btn btn-info btn-circle btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-info"></i></button> &#160;&#160;
           <button class="btn btn-info btn-circle btn-lg" data-toggle="modal" data-target="#myModal2"><i class="fa fa-line-chart"></i></button>
           <br>
           <br-->
-          <a class="btn btn-xl js-scroll-trigger" style="width:805px" id="Yama">Understanding a Drug Toxicity</a> &#160;&#160;
+          <a class="btn btn-xl js-scroll-trigger" style="width:805px" id="RDFMT">RDF Molecule Templates</a> &#160;&#160;
           <br>
-          <div id="dropdownButtonsYama" style="display:none">
+          <div id="dropdownButtonsRDFMT" style="display:none">
             <br>
-            <button class="btn btn-info" id="nr" onclick="window.location = '../docetaxel.html';"> Docetaxel </button>&#160;
-            <!--<button class="btn btn-info" id="gprc" onclick="window.location = '../gpcr_graph.html';"> GPCR </button>
-            <button class="btn btn-info" id="ic" onclick="window.location = '../ic_graph.html';"> ION Channel </button>&#160;
-            <button class="btn btn-info" id="e" onclick="window.location = '../e_graph.html';"> Enzyme </button>&#160; -->
+            <button class="btn btn-info" id="mt" onclick="window.location = '../rdfmts.html';"> Visualize </button>&#160;
           </div>
           <br>
-          <a class="btn btn-xl js-scroll-trigger" style="width:805px;" id="button2">Exploring Mutations that affect a Drug Effectiveness</a> &#160;&#160;
+          <a class="btn btn-xl js-scroll-trigger" style="width:805px"  id="button2">Understanding a Drug Toxicity</a> &#160;&#160;
           <br>
-          <div id="dropdownButtons" style="display:none;">
+
+            <div id="dropdownButtons" style="display:none;">
             <br>
             <div class="row col-md-12">
-            <div class="dropdown col-md-6">
-              <button id="dataset" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="background-color: #59abb2;">Dataset
+            <div class="dropdown col-md-12">
+              <button id="query" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="background-color: #59abb2;">Queries
               </button>
               <ul class="dropdown-menu">
-                <li onclick="setDataset('nr')"><a>Nuclear Receptor</a></li>
-                <li onclick="setDataset('gpcr')"><a>GPCR</a></li>
-                <li onclick="setDataset('ic')"><a>ION Channel</a></li>
-                <li onclick="setDataset('e')"><a>Enzyme</a></li>
+                <li onclick="setDataset('q1')"><a>Query 1: Toxicity: Drugs that interacts with Docetaxel</a></li>
+                <li onclick="setDataset('q2')"><a>Query 2: Toxicity: Side Effects that interacts with Docetaxel</a></li>
+                <li onclick="setDataset('q3')"><a>Query 3: Toxicity: Proteins of the families CYP, ABC, and CASP that interact with the drug</a></li>
               </ul>
-            </div>
-            <div class="dropdown col-md-6">
-              <button id="mltool" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="background-color: #59abb2;">ML Tool
-              </button>
-              <ul class="dropdown-menu" style="position:relative; z-index:10; height:300px; overflow:auto">
-                <li onclick="setML('NBI')"><a>NBI</a></li>
-                <li onclick="setML('BLM')"><a>BLM</a></li>
-                <li onclick="setML('GIP')"><a>GIP</a></li>
-                <li onclick="setML('LapRLS')"><a>LapRLS</a></li>
-                <li onclick="setML('KBMF2K')"><a>KBMF2K</a></li>
-                <li onclick="setML('NBI_plus_semEP')"><a>NBI + semEP</a></li>
-                <li onclick="setML('BLM_plus_semEP')"><a>BLM + semEP</a></li>
-                <li onclick="setML('GIP_plus_semEP')"><a>GIP + semEP</a></li>
-                <li onclick="setML('LapRLS_plus_semEP')"><a>LapRLS + semEP</a></li>
-                <li onclick="setML('KBMF2K_plus_semEP')"><a>KBMF2K + semEP</a></li>
-                <li onclick="setML('NBI_plus_ncut')"><a>NBI + ncut</a></li>
-                <li onclick="setML('BLM_plus_ncut')"><a>BLM + ncut</a></li>
-                <li onclick="setML('GIP_plus_ncut')"><a>GIP + ncut</a></li>
-                <li onclick="setML('LapRLS_plus_ncut')"><a>LapRLS + ncut</a></li>
-                <li onclick="setML('KBMF2K_plus_ncut')"><a>KBMF2K + ncut</a></li>
-                <li onclick="setML('NBI_plus_metis')"><a>NBI + metis</a></li>
-                <li onclick="setML('BLM_plus_metis')"><a>BLM + metis</a></li>
-                <li onclick="setML('GIP_plus_metis')"><a>GIP + metis</a></li>
-                <li onclick="setML('LapRLS_plus_metis')"><a>LapRLS + metis</a></li>
-                <li onclick="setML('KBMF2K_plus_metis')"><a>KBMF2K + metis</a></li>
-                <li onclick="setML('NBI_plus_random')"><a>NBI + random</a></li>
-                <li onclick="setML('BLM_plus_random')"><a>BLM + random</a></li>
-                <li onclick="setML('GIP_plus_random')"><a>GIP + random</a></li>
-                <li onclick="setML('LapRLS_plus_random')"><a>LapRLS + random</a></li>
-                <li onclick="setML('KBMF2K_plus_random')"><a>KBMF2K + random</a></li>
-              </ul>
+                <p id="querydetail"></p>
             </div>
             </div>
             <br>
@@ -138,28 +105,22 @@
             </div>
           </div>
           <br>
-          <a class="btn btn-xl js-scroll-trigger" style="width:805px; margin-left: -0.2%" id="ihla">Understanding Relatedness Between Biomedical Entities</a> &#160;&#160;
+          <a class="btn btn-xl js-scroll-trigger" style="width:805px;"  id="ihla">Exploring Mutations that affect a Drug Effectiveness</a> &#160;&#160;
+          <br>
+
           <div id="dropdownButtons3" style="display:none;">
             <br>
             <div class="row col-md-12">
-            <div class="dropdown col-md-6">
-              <button id="datasetButton3" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="background-color: #59abb2;">Dataset
+            <div class="dropdown col-md-12">
+              <button id="mutquery" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="background-color: #59abb2;">Queries
               </button>
               <ul class="dropdown-menu">
-                <li onclick="setDatasetButton3('nr')"><a>Nuclear Receptor</a></li>
-                <li onclick="setDatasetButton3('gpcr')"><a>GPCR</a></li>
-                <li onclick="setDatasetButton3('ic')"><a>ION Channel</a></li>
-                <li onclick="setDatasetButton3('e')"><a>Enzyme</a></li>
+                <li onclick="setDataset('mq1')"><a>Query 1: Potential Mutations that may impact the effectiveness of docetaxel</a></li>
+                <li onclick="setDataset('mq2')"><a>Query 2: Potential Mutations that may impact the effectiveness of docetaxel and side effects and drug advarse events </a></li>
+                <li onclick="setDataset('mq3')"><a>Query 3: Side Effects of docetaxel and mutations that can impact effectivenses </a></li>
+                <li onclick="setDataset('mq4')"><a>Query 4: Mutations associated with proteins that interact with docetaxel and with the drugs that interacts with docetaxel</a></li>
               </ul>
-            </div>
-            <div class="dropdown col-md-6">
-              <button id="machines" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="background-color: #59abb2;">UM Tool
-              </button>
-              <ul class="dropdown-menu" style="position:relative; z-index:10">
-                <li onclick="setMachine('semEP')"><a>semEP</a></li>
-                <li onclick="setMachine('metis')"><a>METIS</a></li>
-                <li onclick="setMachine('ncut')"><a>NCUT</a></li>
-              </ul>
+                <p id="mutquerydetail"></p>
             </div>
             </div>
             <br>
@@ -167,6 +128,17 @@
               <button class="btn btn-primary" onclick="searchButton3()">SEARCH</button>
             </div>
           </div>
+          <br>
+          <a class="btn btn-xl js-scroll-trigger" style="width:805px; margin-left: -0.2%" id="Yama">Understanding Relatedness Between Biomedical Entities</a> &#160;&#160;
+          <br>
+          <div id="dropdownButtonsYama" style="display:none">
+            <br>
+            <button class="btn btn-info" id="c1" onclick="window.location = 'semEP_59';"> cluster 1 </button>&#160;
+            <button class="btn btn-info" id="c2" onclick="window.location = 'semEP_74';"> cluster 2 </button>&#160;
+            <button class="btn btn-info" id="c3" onclick="window.location = 'semEP_168';"> cluster 3 </button>&#160;
+            <button class="btn btn-info" id="c4" onclick="window.location = 'semEP_190';"> cluster 4 </button>&#160;
+          </div>
+
           </div>
          </div>
         </div>
@@ -184,7 +156,7 @@
 						<div class="content">
 							<br>
 							<p>
-							 Demo: Kemele M. Endris, Samaneh Jozashoori, Guillermo Palma, Maria-Esther Vidal.
+							  Kemele M. Endris, Samaneh Jozashoori, Guillermo Palma, Maria-Esther Vidal.
 							<br>
 							</p>
 						</div>
@@ -380,9 +352,10 @@
     </div>
 
     {% load static %}
-    <script type="application/ecmascript" src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
-    <script type="application/ecmascript" src="{% static 'js/bootstrap.min.js' %}"></script>
     <script type="application/ecmascript" src="{% static 'js/popper.min.js' %}"></script>
+    <script type="application/ecmascript" src="{% static 'js/jquery.min.js' %}"></script>
+    <script type="application/ecmascript" src="{% static 'js/jquery-ui.min.js' %}"></script>
+    <script type="application/ecmascript" src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
 
     <script type="application/ecmascript" src="{% static 'js/jquery.easing.min.js' %}"></script>
 
@@ -399,6 +372,9 @@
       });
       $("#Yama").click(function(){
           $("#dropdownButtonsYama").toggle('slow');
+      });
+      $("#RDFMT").click(function(){
+          $("#dropdownButtonsRDFMT").toggle('slow');
       });
 
     </script>

@@ -1,0 +1,362 @@
+{
+"format_version" : "1.0",
+"generated_by" : "cytoscape-3.2.0",
+"target_cytoscapejs_version" : "~2.1",
+"data" : {
+"selected" : true,
+"__Annotations" : [ ],
+"shared_name" : "WineCheeseNetwork",
+"SUID" : 52,
+"name" : "WineCheeseNetwork"
+},
+"elements" : {
+"nodes" : [{
+"data" : {
+"id":"docetaxel1",
+"selected":false,
+"cytoscape_alias_list":["docetaxel"],
+"canonicalName": "docetaxel",
+"SUID":2,
+"NodeType": "RedWine",
+"name": "docetaxel",
+"shared_name": "docetaxel"
+},
+"position" : {
+	"x" : 1000,
+	"y" : 1000
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"Cytochrome P450 family 3 subfamily A member 41",
+"selected":false,
+"cytoscape_alias_list":["Cytochrome P450 family 3 subfamily A member 4"],
+"canonicalName": "Cytochrome P450 family 3 subfamily A member 4",
+"SUID":3,
+"NodeType": "WhiteWine",
+"name": "Cytochrome P450 family 3 subfamily A member 4",
+"shared_name": "Cytochrome P450 family 3 subfamily A member 4"
+},
+"position" : {
+	"x" : 2000,
+	"y" : 1000
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"Cytochrome P450 family 1 subfamily B member 11",
+"selected":false,
+"cytoscape_alias_list":["Cytochrome P450 family 1 subfamily B member 1"],
+"canonicalName": "Cytochrome P450 family 1 subfamily B member 1",
+"SUID":4,
+"NodeType": "WhiteWine",
+"name": "Cytochrome P450 family 1 subfamily B member 1",
+"shared_name": "Cytochrome P450 family 1 subfamily B member 1"
+},
+"position" : {
+	"x" : 2000,
+	"y" : 1050
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"Cytochrome P450 family 19 subfamily A member 11",
+"selected":false,
+"cytoscape_alias_list":["Cytochrome P450 family 19 subfamily A member 1"],
+"canonicalName": "Cytochrome P450 family 19 subfamily A member 1",
+"SUID":5,
+"NodeType": "WhiteWine",
+"name": "Cytochrome P450 family 19 subfamily A member 1",
+"shared_name": "Cytochrome P450 family 19 subfamily A member 1"
+},
+"position" : {
+	"x" : 2000,
+	"y" : 1100
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"Cytochrome P450 family 3 subfamily A member 51",
+"selected":false,
+"cytoscape_alias_list":["Cytochrome P450 family 3 subfamily A member 5"],
+"canonicalName": "Cytochrome P450 family 3 subfamily A member 5",
+"SUID":6,
+"NodeType": "WhiteWine",
+"name": "Cytochrome P450 family 3 subfamily A member 5",
+"shared_name": "Cytochrome P450 family 3 subfamily A member 5"
+},
+"position" : {
+	"x" : 2000,
+	"y" : 1150
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"paclitaxel1",
+"selected":false,
+"cytoscape_alias_list":["paclitaxel"],
+"canonicalName": "paclitaxel",
+"SUID":7,
+"NodeType": "RedWine",
+"name": "paclitaxel",
+"shared_name": "paclitaxel"
+},
+"position" : {
+	"x" : 1000,
+	"y" : 1350.0
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"Cytochrome P450 family 1 subfamily A member 21",
+"selected":false,
+"cytoscape_alias_list":["Cytochrome P450 family 1 subfamily A member 2"],
+"canonicalName": "Cytochrome P450 family 1 subfamily A member 2",
+"SUID":8,
+"NodeType": "WhiteWine",
+"name": "Cytochrome P450 family 1 subfamily A member 2",
+"shared_name": "Cytochrome P450 family 1 subfamily A member 2"
+},
+"position" : {
+	"x" : 2000,
+	"y" : 1200
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"Cytochrome P450 family 2 subfamily C member 81",
+"selected":false,
+"cytoscape_alias_list":["Cytochrome P450 family 2 subfamily C member 8"],
+"canonicalName": "Cytochrome P450 family 2 subfamily C member 8",
+"SUID":9,
+"NodeType": "WhiteWine",
+"name": "Cytochrome P450 family 2 subfamily C member 8",
+"shared_name": "Cytochrome P450 family 2 subfamily C member 8"
+},
+"position" : {
+	"x" : 2000,
+	"y" : 1250
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"Cytochrome P450 family 2 subfamily C member 91",
+"selected":false,
+"cytoscape_alias_list":["Cytochrome P450 family 2 subfamily C member 9"],
+"canonicalName": "Cytochrome P450 family 2 subfamily C member 9",
+"SUID":10,
+"NodeType": "WhiteWine",
+"name": "Cytochrome P450 family 2 subfamily C member 9",
+"shared_name": "Cytochrome P450 family 2 subfamily C member 9"
+},
+"position" : {
+	"x" : 2000,
+	"y" : 1300
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"Cytochrome P450 family 2 subfamily D member 61",
+"selected":false,
+"cytoscape_alias_list":["Cytochrome P450 family 2 subfamily D member 6"],
+"canonicalName": "Cytochrome P450 family 2 subfamily D member 6",
+"SUID":11,
+"NodeType": "WhiteWine",
+"name": "Cytochrome P450 family 2 subfamily D member 6",
+"shared_name": "Cytochrome P450 family 2 subfamily D member 6"
+},
+"position" : {
+	"x" : 2000,
+	"y" : 1350
+},
+"selected":false
+}
+
+],
+"edges" : [
+{"data" : {
+"id" : "1",
+"source" : "docetaxel1",
+"target" : "Cytochrome P450 family 3 subfamily A member 41",
+"selected" : false,
+"canonicalName" : "docetaxel1 (Interactive) Cytochrome P450 family 3 subfamily A member 41",
+"SUID" : 1,
+"name" : "docetaxel1 (Interactive) Cytochrome P450 family 3 subfamily A member 41",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "docetaxel1 (Interactive) Cytochrome P450 family 3 subfamily A member 41"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "2",
+"source" : "docetaxel1",
+"target" : "Cytochrome P450 family 1 subfamily B member 11",
+"selected" : false,
+"canonicalName" : "docetaxel1 (Interactive) Cytochrome P450 family 1 subfamily B member 11",
+"SUID" : 2,
+"name" : "docetaxel1 (Interactive) Cytochrome P450 family 1 subfamily B member 11",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "docetaxel1 (Interactive) Cytochrome P450 family 1 subfamily B member 11"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "3",
+"source" : "docetaxel1",
+"target" : "Cytochrome P450 family 19 subfamily A member 11",
+"selected" : false,
+"canonicalName" : "docetaxel1 (Interactive) Cytochrome P450 family 19 subfamily A member 11",
+"SUID" : 3,
+"name" : "docetaxel1 (Interactive) Cytochrome P450 family 19 subfamily A member 11",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "docetaxel1 (Interactive) Cytochrome P450 family 19 subfamily A member 11"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "4",
+"source" : "docetaxel1",
+"target" : "Cytochrome P450 family 3 subfamily A member 51",
+"selected" : false,
+"canonicalName" : "docetaxel1 (Interactive) Cytochrome P450 family 3 subfamily A member 51",
+"SUID" : 4,
+"name" : "docetaxel1 (Interactive) Cytochrome P450 family 3 subfamily A member 51",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "docetaxel1 (Interactive) Cytochrome P450 family 3 subfamily A member 51"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "5",
+"source" : "paclitaxel1",
+"target" : "Cytochrome P450 family 19 subfamily A member 11",
+"selected" : false,
+"canonicalName" : "paclitaxel1 (Interactive) Cytochrome P450 family 19 subfamily A member 11",
+"SUID" : 5,
+"name" : "paclitaxel1 (Interactive) Cytochrome P450 family 19 subfamily A member 11",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "paclitaxel1 (Interactive) Cytochrome P450 family 19 subfamily A member 11"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "6",
+"source" : "paclitaxel1",
+"target" : "Cytochrome P450 family 1 subfamily A member 21",
+"selected" : false,
+"canonicalName" : "paclitaxel1 (Interactive) Cytochrome P450 family 1 subfamily A member 21",
+"SUID" : 6,
+"name" : "paclitaxel1 (Interactive) Cytochrome P450 family 1 subfamily A member 21",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "paclitaxel1 (Interactive) Cytochrome P450 family 1 subfamily A member 21"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "7",
+"source" : "paclitaxel1",
+"target" : "Cytochrome P450 family 3 subfamily A member 41",
+"selected" : false,
+"canonicalName" : "paclitaxel1 (Interactive) Cytochrome P450 family 3 subfamily A member 41",
+"SUID" : 7,
+"name" : "paclitaxel1 (Interactive) Cytochrome P450 family 3 subfamily A member 41",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "paclitaxel1 (Interactive) Cytochrome P450 family 3 subfamily A member 41"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "8",
+"source" : "paclitaxel1",
+"target" : "Cytochrome P450 family 3 subfamily A member 51",
+"selected" : false,
+"canonicalName" : "paclitaxel1 (Interactive) Cytochrome P450 family 3 subfamily A member 51",
+"SUID" : 8,
+"name" : "paclitaxel1 (Interactive) Cytochrome P450 family 3 subfamily A member 51",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "paclitaxel1 (Interactive) Cytochrome P450 family 3 subfamily A member 51"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "9",
+"source" : "paclitaxel1",
+"target" : "Cytochrome P450 family 2 subfamily C member 81",
+"selected" : false,
+"canonicalName" : "paclitaxel1 (Interactive) Cytochrome P450 family 2 subfamily C member 81",
+"SUID" : 9,
+"name" : "paclitaxel1 (Interactive) Cytochrome P450 family 2 subfamily C member 81",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "paclitaxel1 (Interactive) Cytochrome P450 family 2 subfamily C member 81"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "10",
+"source" : "paclitaxel1",
+"target" : "Cytochrome P450 family 2 subfamily C member 91",
+"selected" : false,
+"canonicalName" : "paclitaxel1 (Interactive) Cytochrome P450 family 2 subfamily C member 91",
+"SUID" : 10,
+"name" : "paclitaxel1 (Interactive) Cytochrome P450 family 2 subfamily C member 91",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "paclitaxel1 (Interactive) Cytochrome P450 family 2 subfamily C member 91"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "11",
+"source" : "paclitaxel1",
+"target" : "Cytochrome P450 family 2 subfamily D member 61",
+"selected" : false,
+"canonicalName" : "paclitaxel1 (Interactive) Cytochrome P450 family 2 subfamily D member 61",
+"SUID" : 11,
+"name" : "paclitaxel1 (Interactive) Cytochrome P450 family 2 subfamily D member 61",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "paclitaxel1 (Interactive) Cytochrome P450 family 2 subfamily D member 61"
+},
+"selected" : false
+}
+
+]
+}
+}

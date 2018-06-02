@@ -1,0 +1,134 @@
+{
+"format_version" : "1.0",
+"generated_by" : "cytoscape-3.2.0",
+"target_cytoscapejs_version" : "~2.1",
+"data" : {
+"selected" : true,
+"__Annotations" : [ ],
+"shared_name" : "WineCheeseNetwork",
+"SUID" : 52,
+"name" : "WineCheeseNetwork"
+},
+"elements" : {
+"nodes" : [{
+"data" : {
+"id":"Capecitabine1",
+"selected":false,
+"cytoscape_alias_list":["Capecitabine"],
+"canonicalName": "Capecitabine",
+"SUID":2,
+"NodeType": "RedWine",
+"name": "Capecitabine",
+"shared_name": "Capecitabine"
+},
+"position" : {
+	"x" : 1000,
+	"y" : 1000
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"Thymidylate synthetase1",
+"selected":false,
+"cytoscape_alias_list":["Thymidylate synthetase"],
+"canonicalName": "Thymidylate synthetase",
+"SUID":3,
+"NodeType": "WhiteWine",
+"name": "Thymidylate synthetase",
+"shared_name": "Thymidylate synthetase"
+},
+"position" : {
+	"x" : 2000,
+	"y" : 1000
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"Gemcitabine1",
+"selected":false,
+"cytoscape_alias_list":["Gemcitabine"],
+"canonicalName": "Gemcitabine",
+"SUID":4,
+"NodeType": "RedWine",
+"name": "Gemcitabine",
+"shared_name": "Gemcitabine"
+},
+"position" : {
+	"x" : 1000,
+	"y" : 1050.0
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"Cytidine/uridine monophosphate kinase 11",
+"selected":false,
+"cytoscape_alias_list":["Cytidine/uridine monophosphate kinase 1"],
+"canonicalName": "Cytidine/uridine monophosphate kinase 1",
+"SUID":5,
+"NodeType": "WhiteWine",
+"name": "Cytidine/uridine monophosphate kinase 1",
+"shared_name": "Cytidine/uridine monophosphate kinase 1"
+},
+"position" : {
+	"x" : 2000,
+	"y" : 1050
+},
+"selected":false
+}
+
+],
+"edges" : [
+{"data" : {
+"id" : "1",
+"source" : "Capecitabine1",
+"target" : "Thymidylate synthetase1",
+"selected" : false,
+"canonicalName" : "Capecitabine1 (Interactive) Thymidylate synthetase1",
+"SUID" : 1,
+"name" : "Capecitabine1 (Interactive) Thymidylate synthetase1",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "Capecitabine1 (Interactive) Thymidylate synthetase1"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "2",
+"source" : "Gemcitabine1",
+"target" : "Thymidylate synthetase1",
+"selected" : false,
+"canonicalName" : "Gemcitabine1 (Interactive) Thymidylate synthetase1",
+"SUID" : 2,
+"name" : "Gemcitabine1 (Interactive) Thymidylate synthetase1",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "Gemcitabine1 (Interactive) Thymidylate synthetase1"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "3",
+"source" : "Gemcitabine1",
+"target" : "Cytidine/uridine monophosphate kinase 11",
+"selected" : false,
+"canonicalName" : "Gemcitabine1 (Interactive) Cytidine/uridine monophosphate kinase 11",
+"SUID" : 3,
+"name" : "Gemcitabine1 (Interactive) Cytidine/uridine monophosphate kinase 11",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "Gemcitabine1 (Interactive) Cytidine/uridine monophosphate kinase 11"
+},
+"selected" : false
+}
+
+]
+}
+}

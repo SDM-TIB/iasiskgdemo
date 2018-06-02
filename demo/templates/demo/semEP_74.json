@@ -1,0 +1,101 @@
+{
+"format_version" : "1.0",
+"generated_by" : "cytoscape-3.2.0",
+"target_cytoscapejs_version" : "~2.1",
+"data" : {
+"selected" : true,
+"__Annotations" : [ ],
+"shared_name" : "WineCheeseNetwork",
+"SUID" : 52,
+"name" : "WineCheeseNetwork"
+},
+"elements" : {
+"nodes" : [{
+"data" : {
+"id":"FAMP1",
+"selected":false,
+"cytoscape_alias_list":["FAMP"],
+"canonicalName": "FAMP",
+"SUID":2,
+"NodeType": "RedWine",
+"name": "FAMP",
+"shared_name": "FAMP"
+},
+"position" : {
+	"x" : 1000,
+	"y" : 1000
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"Ribonucleotide reductase catalytic subunit M11",
+"selected":false,
+"cytoscape_alias_list":["Ribonucleotide reductase catalytic subunit M1"],
+"canonicalName": "Ribonucleotide reductase catalytic subunit M1",
+"SUID":3,
+"NodeType": "WhiteWine",
+"name": "Ribonucleotide reductase catalytic subunit M1",
+"shared_name": "Ribonucleotide reductase catalytic subunit M1"
+},
+"position" : {
+	"x" : 2000,
+	"y" : 1000
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"Gemcitabine1",
+"selected":false,
+"cytoscape_alias_list":["Gemcitabine"],
+"canonicalName": "Gemcitabine",
+"SUID":4,
+"NodeType": "RedWine",
+"name": "Gemcitabine",
+"shared_name": "Gemcitabine"
+},
+"position" : {
+	"x" : 1000,
+	"y" : 1050
+},
+"selected":false
+}
+
+],
+"edges" : [
+{"data" : {
+"id" : "1",
+"source" : "FAMP1",
+"target" : "Ribonucleotide reductase catalytic subunit M11",
+"selected" : false,
+"canonicalName" : "FAMP1 (Interactive) Ribonucleotide reductase catalytic subunit M11",
+"SUID" : 1,
+"name" : "FAMP1 (Interactive) Ribonucleotide reductase catalytic subunit M11",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "FAMP1 (Interactive) Ribonucleotide reductase catalytic subunit M11"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "2",
+"source" : "Gemcitabine1",
+"target" : "Ribonucleotide reductase catalytic subunit M11",
+"selected" : false,
+"canonicalName" : "Gemcitabine1 (Interactive) Ribonucleotide reductase catalytic subunit M11",
+"SUID" : 2,
+"name" : "Gemcitabine1 (Interactive) Ribonucleotide reductase catalytic subunit M11",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "Gemcitabine1 (Interactive) Ribonucleotide reductase catalytic subunit M11"
+},
+"selected" : false
+}
+
+]
+}
+}
