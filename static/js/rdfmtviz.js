@@ -32,8 +32,8 @@ $(document).ready(function() {
 			for (lk in linkedto){
 
 				n =  linkedto[lk];
-		  		li = linkedto[lk].lastIndexOf("/");
-		  	  	lkname = n.substring(li+1)
+		  		li = n.lastIndexOf("/");
+		  	  	lkname = n.substring(li+1);
 				console.log(lkname);
 			  	var node2={};
 			  	node2.id=j;
