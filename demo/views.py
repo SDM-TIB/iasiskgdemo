@@ -66,6 +66,67 @@ def semep190drugs(request):
 def semep190js(request):
     return render(request, 'demo/semEP_190.js')
 
+def semep168p90(request):
+    return render(request, "demo/semEP_168p90.html")
+
+def semep168p90json(request):
+    return render(request, 'demo/semEP_168p90.json')
+
+def semep168p90drugs(request):
+    return render(request, 'demo/semEP_168p90.drugs')
+
+def semep168p90drugsjs(request):
+    return render(request, 'demo/semEP_168p90.drugs.js')
+
+def semep168p90js(request):
+    return render(request, 'demo/semEP_168p90.js')
+
+
+def semep190p90(request):
+    return render(request, "demo/semEP_190p90.html")
+
+def semep190p90json(request):
+    return render(request, 'demo/semEP_190p90.json')
+
+def semep190p90drugs(request):
+    return render(request, 'demo/semEP_190p90.drugs')
+
+def semep190p90drugsjs(request):
+    return render(request, 'demo/semEP_190p90.drugs.js')
+
+def semep190p90js(request):
+    return render(request, 'demo/semEP_190p90.js')
+
+
+
+
+def semep1016(request):
+    return render(request, "demo/semEP_1016.html")
+
+def semep1016json(request):
+    return render(request, 'demo/semEP_1016.json')
+
+def semep1016drugs(request):
+    return render(request, 'demo/semEP_1016.drugs')
+
+def semep1016js(request):
+    return render(request, 'demo/semEP_1016.js')
+
+
+
+def semep1534(request):
+    return render(request, "demo/semEP_1534.html")
+
+def semep1534json(request):
+    return render(request, 'demo/semEP_1534.json')
+
+def semep1534drugs(request):
+    return render(request, 'demo/semEP_1534.drugs')
+
+def semep1534js(request):
+    return render(request, 'demo/semEP_1534.js')
+
+
 def rdfmts(request):
     return render(request, 'demo/rdfmts.html')
 

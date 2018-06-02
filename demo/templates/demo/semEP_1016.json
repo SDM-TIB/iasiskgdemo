@@ -1,0 +1,585 @@
+{
+"format_version" : "1.0",
+"generated_by" : "cytoscape-3.2.0",
+"target_cytoscapejs_version" : "~2.1",
+"data" : {
+"selected" : true,
+"__Annotations" : [ ],
+"shared_name" : "WineCheeseNetwork",
+"SUID" : 52,
+"name" : "WineCheeseNetwork"
+},
+"elements" : {
+"nodes" : [{
+"data" : {
+"id":"doxycycline1",
+"selected":false,
+"cytoscape_alias_list":["doxycycline"],
+"canonicalName": "doxycycline",
+"SUID":2,
+"NodeType": "RedWine",
+"name": "doxycycline",
+"shared_name": "doxycycline"
+},
+"position" : {
+	"x" : 1000,
+	"y" : 1000
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"gingivostomatitis1",
+"selected":false,
+"cytoscape_alias_list":["gingivostomatitis"],
+"canonicalName": "gingivostomatitis",
+"SUID":3,
+"NodeType": "WhiteWine",
+"name": "gingivostomatitis",
+"shared_name": "gingivostomatitis"
+},
+"position" : {
+	"x" : 2000,
+	"y" : 1000
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"docetaxel1",
+"selected":false,
+"cytoscape_alias_list":["docetaxel"],
+"canonicalName": "docetaxel",
+"SUID":4,
+"NodeType": "RedWine",
+"name": "docetaxel",
+"shared_name": "docetaxel"
+},
+"position" : {
+	"x" : 1000,
+	"y" : 1050
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"daunorubicin1",
+"selected":false,
+"cytoscape_alias_list":["daunorubicin"],
+"canonicalName": "daunorubicin",
+"SUID":5,
+"NodeType": "RedWine",
+"name": "daunorubicin",
+"shared_name": "daunorubicin"
+},
+"position" : {
+	"x" : 1000,
+	"y" : 1100
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"doxorubicin1",
+"selected":false,
+"cytoscape_alias_list":["doxorubicin"],
+"canonicalName": "doxorubicin",
+"SUID":6,
+"NodeType": "RedWine",
+"name": "doxorubicin",
+"shared_name": "doxorubicin"
+},
+"position" : {
+	"x" : 1000,
+	"y" : 1150
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"oxycodone1",
+"selected":false,
+"cytoscape_alias_list":["oxycodone"],
+"canonicalName": "oxycodone",
+"SUID":7,
+"NodeType": "RedWine",
+"name": "oxycodone",
+"shared_name": "oxycodone"
+},
+"position" : {
+	"x" : 1000,
+	"y" : 1200
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"tetracycline1",
+"selected":false,
+"cytoscape_alias_list":["tetracycline"],
+"canonicalName": "tetracycline",
+"SUID":8,
+"NodeType": "RedWine",
+"name": "tetracycline",
+"shared_name": "tetracycline"
+},
+"position" : {
+	"x" : 1000,
+	"y" : 1250
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"moexipril1",
+"selected":false,
+"cytoscape_alias_list":["moexipril"],
+"canonicalName": "moexipril",
+"SUID":9,
+"NodeType": "RedWine",
+"name": "moexipril",
+"shared_name": "moexipril"
+},
+"position" : {
+	"x" : 1000,
+	"y" : 1300
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"Abnormality of connective tissue1",
+"selected":false,
+"cytoscape_alias_list":["Abnormality of connective tissue"],
+"canonicalName": "Abnormality of connective tissue",
+"SUID":10,
+"NodeType": "WhiteWine",
+"name": "Abnormality of connective tissue",
+"shared_name": "Abnormality of connective tissue"
+},
+"position" : {
+	"x" : 2000,
+	"y" : 1500.0
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"etoposide1",
+"selected":false,
+"cytoscape_alias_list":["etoposide"],
+"canonicalName": "etoposide",
+"SUID":11,
+"NodeType": "RedWine",
+"name": "etoposide",
+"shared_name": "etoposide"
+},
+"position" : {
+	"x" : 1000,
+	"y" : 1350
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"idarubicin1",
+"selected":false,
+"cytoscape_alias_list":["idarubicin"],
+"canonicalName": "idarubicin",
+"SUID":12,
+"NodeType": "RedWine",
+"name": "idarubicin",
+"shared_name": "idarubicin"
+},
+"position" : {
+	"x" : 1000,
+	"y" : 1400
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"cromolyn1",
+"selected":false,
+"cytoscape_alias_list":["cromolyn"],
+"canonicalName": "cromolyn",
+"SUID":13,
+"NodeType": "RedWine",
+"name": "cromolyn",
+"shared_name": "cromolyn"
+},
+"position" : {
+	"x" : 1000,
+	"y" : 1450
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"hydromorphone1",
+"selected":false,
+"cytoscape_alias_list":["hydromorphone"],
+"canonicalName": "hydromorphone",
+"SUID":14,
+"NodeType": "RedWine",
+"name": "hydromorphone",
+"shared_name": "hydromorphone"
+},
+"position" : {
+	"x" : 1000,
+	"y" : 1500
+},
+"selected":false
+}
+
+],
+"edges" : [
+{"data" : {
+"id" : "1",
+"source" : "doxycycline1",
+"target" : "gingivostomatitis1",
+"selected" : false,
+"canonicalName" : "doxycycline1 (Interactive) gingivostomatitis1",
+"SUID" : 1,
+"name" : "doxycycline1 (Interactive) gingivostomatitis1",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "doxycycline1 (Interactive) gingivostomatitis1"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "2",
+"source" : "docetaxel1",
+"target" : "gingivostomatitis1",
+"selected" : false,
+"canonicalName" : "docetaxel1 (Interactive) gingivostomatitis1",
+"SUID" : 2,
+"name" : "docetaxel1 (Interactive) gingivostomatitis1",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "docetaxel1 (Interactive) gingivostomatitis1"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "3",
+"source" : "daunorubicin1",
+"target" : "gingivostomatitis1",
+"selected" : false,
+"canonicalName" : "daunorubicin1 (Interactive) gingivostomatitis1",
+"SUID" : 3,
+"name" : "daunorubicin1 (Interactive) gingivostomatitis1",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "daunorubicin1 (Interactive) gingivostomatitis1"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "4",
+"source" : "doxorubicin1",
+"target" : "gingivostomatitis1",
+"selected" : false,
+"canonicalName" : "doxorubicin1 (Interactive) gingivostomatitis1",
+"SUID" : 4,
+"name" : "doxorubicin1 (Interactive) gingivostomatitis1",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "doxorubicin1 (Interactive) gingivostomatitis1"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "5",
+"source" : "oxycodone1",
+"target" : "gingivostomatitis1",
+"selected" : false,
+"canonicalName" : "oxycodone1 (Interactive) gingivostomatitis1",
+"SUID" : 5,
+"name" : "oxycodone1 (Interactive) gingivostomatitis1",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "oxycodone1 (Interactive) gingivostomatitis1"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "6",
+"source" : "tetracycline1",
+"target" : "gingivostomatitis1",
+"selected" : false,
+"canonicalName" : "tetracycline1 (Interactive) gingivostomatitis1",
+"SUID" : 6,
+"name" : "tetracycline1 (Interactive) gingivostomatitis1",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "tetracycline1 (Interactive) gingivostomatitis1"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "7",
+"source" : "moexipril1",
+"target" : "Abnormality of connective tissue1",
+"selected" : false,
+"canonicalName" : "moexipril1 (Interactive) Abnormality of connective tissue1",
+"SUID" : 7,
+"name" : "moexipril1 (Interactive) Abnormality of connective tissue1",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "moexipril1 (Interactive) Abnormality of connective tissue1"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "8",
+"source" : "etoposide1",
+"target" : "gingivostomatitis1",
+"selected" : false,
+"canonicalName" : "etoposide1 (Interactive) gingivostomatitis1",
+"SUID" : 8,
+"name" : "etoposide1 (Interactive) gingivostomatitis1",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "etoposide1 (Interactive) gingivostomatitis1"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "9",
+"source" : "idarubicin1",
+"target" : "gingivostomatitis1",
+"selected" : false,
+"canonicalName" : "idarubicin1 (Interactive) gingivostomatitis1",
+"SUID" : 9,
+"name" : "idarubicin1 (Interactive) gingivostomatitis1",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "idarubicin1 (Interactive) gingivostomatitis1"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "10",
+"source" : "cromolyn1",
+"target" : "gingivostomatitis1",
+"selected" : false,
+"canonicalName" : "cromolyn1 (Interactive) gingivostomatitis1",
+"SUID" : 10,
+"name" : "cromolyn1 (Interactive) gingivostomatitis1",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "cromolyn1 (Interactive) gingivostomatitis1"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "11",
+"source" : "hydromorphone1",
+"target" : "gingivostomatitis1",
+"selected" : false,
+"canonicalName" : "hydromorphone1 (Interactive) gingivostomatitis1",
+"SUID" : 11,
+"name" : "hydromorphone1 (Interactive) gingivostomatitis1",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "hydromorphone1 (Interactive) gingivostomatitis1"
+},
+"selected" : false
+},
+
+{"data" : {
+"id" : "12",
+"source" : "docetaxel1",
+"target" : "Abnormality of connective tissue1",
+"selected" : false,
+"canonicalName" : "docetaxel1 (bp) Abnormality of connective tissue1",
+"SUID" : 12,
+"name" : "docetaxel1 (bp) Abnormality of connective tissue1",
+"interaction" : "bp",
+"shared_interaction" : "bp",
+"shared_name" : "docetaxel1 (bp) Abnormality of connective tissue1"
+},
+"selected" : false
+},
+
+    {"data" : {
+"id" : "13",
+"source" : "etoposide1",
+"target" : "Abnormality of connective tissue1",
+"selected" : false,
+"canonicalName" : "etoposide1 (bp) Abnormality of connective tissue1",
+"SUID" : 13,
+"name" : "etoposide1 (bp) Abnormality of connective tissue1",
+"interaction" : "bp",
+"shared_interaction" : "bp",
+"shared_name" : "etoposide1 (bp) Abnormality of connective tissue1"
+},
+"selected" : false
+    },
+
+        {"data" : {
+"id" : "14",
+"source" : "moexipril1",
+"target" : "gingivostomatitis1",
+"selected" : false,
+"canonicalName" : "moexipril1 (bp) gingivostomatitis1",
+"SUID" : 14,
+"name" : "moexipril1 (bp) gingivostomatitis1",
+"interaction" : "bp",
+"shared_interaction" : "bp",
+"shared_name" : "moexipril1 (bp) gingivostomatitis1"
+},
+"selected" : false
+	},
+
+            {"data" : {
+"id" : "15",
+"source" : "daunorubicin1",
+"target" : "Abnormality of connective tissue1",
+"selected" : false,
+"canonicalName" : "moexipril1 (bp) Abnormality of connective tissue1",
+"SUID" : 15,
+"name" : "daunorubicin1 (bp) Abnormality of connective tissue1",
+"interaction" : "bp",
+"shared_interaction" : "bp",
+"shared_name" : "daunorubicin1 (bp) Abnormality of connective tissue1"
+},
+"selected" : false
+	    },
+
+                {"data" : {
+"id" : "16",
+"source" : "cromolyn1",
+"target" : "Abnormality of connective tissue1",
+"selected" : false,
+"canonicalName" : "cromolyn1 (bp) Abnormality of connective tissue1",
+"SUID" : 16,
+"name" : "cromolyn1 (bp) Abnormality of connective tissue1",
+"interaction" : "bp",
+"shared_interaction" : "bp",
+"shared_name" : "cromolyn1 (bp) Abnormality of connective tissue1"
+},
+"selected" : false
+},
+
+                {"data" : {
+"id" : "17",
+"source" : "idarubicin1",
+"target" : "Abnormality of connective tissue1",
+"selected" : false,
+"canonicalName" : "idarubicin1 (bp) Abnormality of connective tissue1",
+"SUID" : 17,
+"name" : "idarubicin1 (bp) Abnormality of connective tissue1",
+"interaction" : "bp",
+"shared_interaction" : "bp",
+"shared_name" : "idarubicin1 (bp) Abnormality of connective tissue1"
+},
+"selected" : false
+},
+
+                {"data" : {
+"id" : "18",
+"source" : "doxorubicin1",
+"target" : "Abnormality of connective tissue1",
+"selected" : false,
+"canonicalName" : "doxorubicin1 (bp) Abnormality of connective tissue1",
+"SUID" : 17,
+"name" : "doxorubicin1 (bp) Abnormality of connective tissue1",
+"interaction" : "bp",
+"shared_interaction" : "bp",
+"shared_name" : "doxorubicin1 (bp) Abnormality of connective tissue1"
+},
+"selected" : false
+		},
+
+                    {"data" : {
+"id" : "19",
+"source" : "doxycycline1",
+"target" : "Abnormality of connective tissue1",
+"selected" : false,
+"canonicalName" : "doxycycline1 (bp) Abnormality of connective tissue1",
+"SUID" : 19,
+"name" : "doxycycline1 (bp) Abnormality of connective tissue1",
+"interaction" : "bp",
+"shared_interaction" : "bp",
+"shared_name" : "doxycycline1 (bp) Abnormality of connective tissue1"
+},
+"selected" : false
+		    },
+
+
+                        {"data" : {
+"id" : "20",
+"source" : "tetracycline1",
+"target" : "Abnormality of connective tissue1",
+"selected" : false,
+"canonicalName" : "tetracycline1 (bp) Abnormality of connective tissue1",
+"SUID" : 20,
+"name" : "tetracycline1 (bp) Abnormality of connective tissue1",
+"interaction" : "bp",
+"shared_interaction" : "bp",
+"shared_name" : "tetracycline1 (bp) Abnormality of connective tissue1"
+},
+"selected" : false
+			},
+    
+                        {"data" : {
+"id" : "21",
+"source" : "hydromorphone1",
+"target" : "Abnormality of connective tissue1",
+"selected" : false,
+"canonicalName" : "hydromorphone1 (bp) Abnormality of connective tissue1",
+"SUID" : 21,
+"name" : "hydromorphone1 (bp) Abnormality of connective tissue1",
+"interaction" : "bp",
+"shared_interaction" : "bp",
+"shared_name" : "hydromorphone1 (bp) Abnormality of connective tissue1"
+},
+"selected" : false
+			},
+
+                            {"data" : {
+"id" : "22",
+"source" : "oxycodone1",
+"target" : "Abnormality of connective tissue1",
+"selected" : false,
+"canonicalName" : "oxycodone1 (bp) Abnormality of connective tissue1",
+"SUID" : 22,
+"name" : "oxycodone1 (bp) Abnormality of connective tissue1",
+"interaction" : "bp",
+"shared_interaction" : "bp",
+"shared_name" : "oxycodone1 (bp) Abnormality of connective tissue1"
+},
+"selected" : false
+}
+
+
+    
+
+]
+}
+}

@@ -274,22 +274,27 @@
           <br>
           <div id="drugtypes" style="display:none">
               <br>
-            <button class="btn btn-info" id="cd"> Four Lung Cancer Drugs </button>&#160;
-            <button class="btn btn-info" id="yd" > Yamanishi Enzyme Dataset Drugs</button>&#160;
+            <button class="btn btn-info" id="cd"> Four Lung Cancer (LC) Drugs </button>&#160;
+            <button class="btn btn-info" id="yd" > Yamanishi Enzyme Dataset (YED)Drugs</button>&#160;
+            <button class="btn btn-info" id="se" > Docetaxel Side Effects (SE)</button>&#160;
           </div>
           <div id="dropdownButtonsYama" style="display:none">
             <br>
-            <button class="btn btn-info" id="c1" onclick="window.location = 'semEP_59';"> cluster 1 </button>&#160;
-            <button class="btn btn-info" id="c2" onclick="window.location = 'semEP_74';"> cluster 2 </button>&#160;
-            <button class="btn btn-info" id="c3" onclick="window.location = 'semEP_168';"> cluster 3 </button>&#160;
-            <button class="btn btn-info" id="c4" onclick="window.location = 'semEP_190';"> cluster 4 </button>&#160;
+            <button class="btn btn-info" id="c1" onclick="window.location = 'semEP_59';"> LC cluster 1 </button>&#160;
+            <button class="btn btn-info" id="c2" onclick="window.location = 'semEP_74';"> LC cluster 2 </button>&#160;
+            <button class="btn btn-info" id="c3" onclick="window.location = 'semEP_168';"> LC cluster 3 </button>&#160;
+            <button class="btn btn-info" id="c4" onclick="window.location = 'semEP_190';"> LC cluster 4 </button>&#160;
           </div>
           <div id="dropdownButtonsYamanishi" style="display:none">
             <br>
-            <button class="btn btn-info" id="yc1" onclick="window.location = 'semEP_59';"> cluster 1 </button>&#160;
-            <button class="btn btn-info" id="yc2" onclick="window.location = 'semEP_74';"> cluster 2 </button>&#160;
-            <button class="btn btn-info" id="yc3" onclick="window.location = 'semEP_168';"> cluster 3 </button>&#160;
-            <button class="btn btn-info" id="yc4" onclick="window.location = 'semEP_190';"> cluster 4 </button>&#160;
+            <button class="btn btn-info" id="yc1" onclick="window.location = 'semEP_168p90';"> YED cluster 1 </button>&#160;
+            <button class="btn btn-info" id="yc2" onclick="window.location = 'semEP_190p90';"> YED cluster 2 </button>&#160;
+          </div>
+
+          <div id="dropdownButtonsSideEffects" style="display:none">
+            <br>
+            <button class="btn btn-info" id="syc1" onclick="window.location = 'semEP_1016';">SE cluster 1 </button>&#160;
+            <button class="btn btn-info" id="syc2" onclick="window.location = 'semEP_1534';">SE cluster 2 </button>&#160;
           </div>
           </div>
          </div>
@@ -540,9 +545,16 @@
       $("#cd").click(function(){
          $("#dropdownButtonsYama").toggle('slow');
          $('#dropdownButtonsYamanishi').css('display','none');
+         $('#dropdownButtonsSideEffects').css('display','none');
       });
       $("#yd").click(function(){
          $("#dropdownButtonsYamanishi").toggle('slow');
+         $('#dropdownButtonsYama').css('display','none');
+         $('#dropdownButtonsSideEffects').css('display','none');
+      });
+      $("#se").click(function(){
+         $("#dropdownButtonsSideEffects").toggle('slow');
+         $('#dropdownButtonsYamanishi').css('display','none');
          $('#dropdownButtonsYama').css('display','none');
       });
 

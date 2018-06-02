@@ -1,0 +1,708 @@
+{
+"format_version" : "1.0",
+"generated_by" : "cytoscape-3.2.0",
+"target_cytoscapejs_version" : "~2.1",
+"data" : {
+"selected" : true,
+"__Annotations" : [ ],
+"shared_name" : "WineCheeseNetwork",
+"SUID" : 52,
+"name" : "WineCheeseNetwork"
+},
+"elements" : {
+"nodes" : [{
+"data" : {
+"id":"tacrolimus1",
+"selected":false,
+"cytoscape_alias_list":["tacrolimus"],
+"canonicalName": "tacrolimus",
+"SUID":2,
+"NodeType": "RedWine",
+"name": "tacrolimus",
+"shared_name": "tacrolimus"
+},
+"position" : {
+	"x" : 1000,
+	"y" : 1000
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"atrial flutter1",
+"selected":false,
+"cytoscape_alias_list":["atrial flutter"],
+"canonicalName": "atrial flutter",
+"SUID":3,
+"NodeType": "WhiteWine",
+"name": "atrial flutter",
+"shared_name": "atrial flutter"
+},
+"position" : {
+	"x" : 2000,
+	"y" : 1000
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"docetaxel1",
+"selected":false,
+"cytoscape_alias_list":["docetaxel"],
+"canonicalName": "docetaxel",
+"SUID":4,
+"NodeType": "RedWine",
+"name": "docetaxel",
+"shared_name": "docetaxel"
+},
+"position" : {
+	"x" : 1000,
+	"y" : 1325.0
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"paclitaxel1",
+"selected":false,
+"cytoscape_alias_list":["paclitaxel"],
+"canonicalName": "paclitaxel",
+"SUID":5,
+"NodeType": "RedWine",
+"name": "paclitaxel",
+"shared_name": "paclitaxel"
+},
+"position" : {
+	"x" : 1000,
+	"y" : 1650.0
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"ventricular tachycardia1",
+"selected":false,
+"cytoscape_alias_list":["ventricular tachycardia"],
+"canonicalName": "ventricular tachycardia",
+"SUID":6,
+"NodeType": "WhiteWine",
+"name": "ventricular tachycardia",
+"shared_name": "ventricular tachycardia"
+},
+"position" : {
+	"x" : 2000,
+	"y" : 1050
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"hyperesthesia1",
+"selected":false,
+"cytoscape_alias_list":["hyperesthesia"],
+"canonicalName": "hyperesthesia",
+"SUID":7,
+"NodeType": "WhiteWine",
+"name": "hyperesthesia",
+"shared_name": "hyperesthesia"
+},
+"position" : {
+	"x" : 2000,
+	"y" : 1100
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"postural hypotension1",
+"selected":false,
+"cytoscape_alias_list":["postural hypotension"],
+"canonicalName": "postural hypotension",
+"SUID":8,
+"NodeType": "WhiteWine",
+"name": "postural hypotension",
+"shared_name": "postural hypotension"
+},
+"position" : {
+	"x" : 2000,
+	"y" : 1150
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"atrial fibrillation1",
+"selected":false,
+"cytoscape_alias_list":["atrial fibrillation"],
+"canonicalName": "atrial fibrillation",
+"SUID":9,
+"NodeType": "WhiteWine",
+"name": "atrial fibrillation",
+"shared_name": "atrial fibrillation"
+},
+"position" : {
+	"x" : 2000,
+	"y" : 1200
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"dehydration1",
+"selected":false,
+"cytoscape_alias_list":["dehydration"],
+"canonicalName": "dehydration",
+"SUID":10,
+"NodeType": "WhiteWine",
+"name": "dehydration",
+"shared_name": "dehydration"
+},
+"position" : {
+	"x" : 2000,
+	"y" : 1250
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"pneumonia1",
+"selected":false,
+"cytoscape_alias_list":["pneumonia"],
+"canonicalName": "pneumonia",
+"SUID":11,
+"NodeType": "WhiteWine",
+"name": "pneumonia",
+"shared_name": "pneumonia"
+},
+"position" : {
+	"x" : 2000,
+	"y" : 1300
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"cough1",
+"selected":false,
+"cytoscape_alias_list":["cough"],
+"canonicalName": "cough",
+"SUID":12,
+"NodeType": "WhiteWine",
+"name": "cough",
+"shared_name": "cough"
+},
+"position" : {
+	"x" : 2000,
+	"y" : 1350
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"epistaxis1",
+"selected":false,
+"cytoscape_alias_list":["epistaxis"],
+"canonicalName": "epistaxis",
+"SUID":13,
+"NodeType": "WhiteWine",
+"name": "epistaxis",
+"shared_name": "epistaxis"
+},
+"position" : {
+	"x" : 2000,
+	"y" : 1400
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"hyperglycemia1",
+"selected":false,
+"cytoscape_alias_list":["hyperglycemia"],
+"canonicalName": "hyperglycemia",
+"SUID":14,
+"NodeType": "WhiteWine",
+"name": "hyperglycemia",
+"shared_name": "hyperglycemia"
+},
+"position" : {
+	"x" : 2000,
+	"y" : 1450
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"paresthesia1",
+"selected":false,
+"cytoscape_alias_list":["paresthesia"],
+"canonicalName": "paresthesia",
+"SUID":15,
+"NodeType": "WhiteWine",
+"name": "paresthesia",
+"shared_name": "paresthesia"
+},
+"position" : {
+	"x" : 2000,
+	"y" : 1500
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"syncope1",
+"selected":false,
+"cytoscape_alias_list":["syncope"],
+"canonicalName": "syncope",
+"SUID":16,
+"NodeType": "WhiteWine",
+"name": "syncope",
+"shared_name": "syncope"
+},
+"position" : {
+	"x" : 2000,
+	"y" : 1550
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"gastritis1",
+"selected":false,
+"cytoscape_alias_list":["gastritis"],
+"canonicalName": "gastritis",
+"SUID":17,
+"NodeType": "WhiteWine",
+"name": "gastritis",
+"shared_name": "gastritis"
+},
+"position" : {
+	"x" : 2000,
+	"y" : 1600
+},
+"selected":false
+}
+ ,
+{
+"data" : {
+"id":"dyspnea1",
+"selected":false,
+"cytoscape_alias_list":["dyspnea"],
+"canonicalName": "dyspnea",
+"SUID":18,
+"NodeType": "WhiteWine",
+"name": "dyspnea",
+"shared_name": "dyspnea"
+},
+"position" : {
+	"x" : 2000,
+	"y" : 1650
+},
+"selected":false
+}
+
+],
+"edges" : [
+{"data" : {
+"id" : "1",
+"source" : "tacrolimus1",
+"target" : "atrial flutter1",
+"selected" : false,
+"canonicalName" : "tacrolimus1 (Interactive) atrial flutter1",
+"SUID" : 1,
+"name" : "tacrolimus1 (Interactive) atrial flutter1",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "tacrolimus1 (Interactive) atrial flutter1"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "2",
+"source" : "docetaxel1",
+"target" : "atrial flutter1",
+"selected" : false,
+"canonicalName" : "docetaxel1 (Interactive) atrial flutter1",
+"SUID" : 2,
+"name" : "docetaxel1 (Interactive) atrial flutter1",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "docetaxel1 (Interactive) atrial flutter1"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "3",
+"source" : "paclitaxel1",
+"target" : "ventricular tachycardia1",
+"selected" : false,
+"canonicalName" : "paclitaxel1 (Interactive) ventricular tachycardia1",
+"SUID" : 3,
+"name" : "paclitaxel1 (Interactive) ventricular tachycardia1",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "paclitaxel1 (Interactive) ventricular tachycardia1"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "4",
+"source" : "tacrolimus1",
+"target" : "hyperesthesia1",
+"selected" : false,
+"canonicalName" : "tacrolimus1 (Interactive) hyperesthesia1",
+"SUID" : 4,
+"name" : "tacrolimus1 (Interactive) hyperesthesia1",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "tacrolimus1 (Interactive) hyperesthesia1"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "5",
+"source" : "paclitaxel1",
+"target" : "postural hypotension1",
+"selected" : false,
+"canonicalName" : "paclitaxel1 (Interactive) postural hypotension1",
+"SUID" : 5,
+"name" : "paclitaxel1 (Interactive) postural hypotension1",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "paclitaxel1 (Interactive) postural hypotension1"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "6",
+"source" : "tacrolimus1",
+"target" : "postural hypotension1",
+"selected" : false,
+"canonicalName" : "tacrolimus1 (Interactive) postural hypotension1",
+"SUID" : 6,
+"name" : "tacrolimus1 (Interactive) postural hypotension1",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "tacrolimus1 (Interactive) postural hypotension1"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "7",
+"source" : "tacrolimus1",
+"target" : "atrial fibrillation1",
+"selected" : false,
+"canonicalName" : "tacrolimus1 (Interactive) atrial fibrillation1",
+"SUID" : 7,
+"name" : "tacrolimus1 (Interactive) atrial fibrillation1",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "tacrolimus1 (Interactive) atrial fibrillation1"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "8",
+"source" : "paclitaxel1",
+"target" : "dehydration1",
+"selected" : false,
+"canonicalName" : "paclitaxel1 (Interactive) dehydration1",
+"SUID" : 8,
+"name" : "paclitaxel1 (Interactive) dehydration1",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "paclitaxel1 (Interactive) dehydration1"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "9",
+"source" : "paclitaxel1",
+"target" : "pneumonia1",
+"selected" : false,
+"canonicalName" : "paclitaxel1 (Interactive) pneumonia1",
+"SUID" : 9,
+"name" : "paclitaxel1 (Interactive) pneumonia1",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "paclitaxel1 (Interactive) pneumonia1"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "10",
+"source" : "paclitaxel1",
+"target" : "cough1",
+"selected" : false,
+"canonicalName" : "paclitaxel1 (Interactive) cough1",
+"SUID" : 10,
+"name" : "paclitaxel1 (Interactive) cough1",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "paclitaxel1 (Interactive) cough1"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "11",
+"source" : "docetaxel1",
+"target" : "epistaxis1",
+"selected" : false,
+"canonicalName" : "docetaxel1 (Interactive) epistaxis1",
+"SUID" : 11,
+"name" : "docetaxel1 (Interactive) epistaxis1",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "docetaxel1 (Interactive) epistaxis1"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "12",
+"source" : "paclitaxel1",
+"target" : "hyperglycemia1",
+"selected" : false,
+"canonicalName" : "paclitaxel1 (Interactive) hyperglycemia1",
+"SUID" : 12,
+"name" : "paclitaxel1 (Interactive) hyperglycemia1",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "paclitaxel1 (Interactive) hyperglycemia1"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "13",
+"source" : "paclitaxel1",
+"target" : "paresthesia1",
+"selected" : false,
+"canonicalName" : "paclitaxel1 (Interactive) paresthesia1",
+"SUID" : 13,
+"name" : "paclitaxel1 (Interactive) paresthesia1",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "paclitaxel1 (Interactive) paresthesia1"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "14",
+"source" : "docetaxel1",
+"target" : "syncope1",
+"selected" : false,
+"canonicalName" : "docetaxel1 (Interactive) syncope1",
+"SUID" : 14,
+"name" : "docetaxel1 (Interactive) syncope1",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "docetaxel1 (Interactive) syncope1"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "15",
+"source" : "tacrolimus1",
+"target" : "gastritis1",
+"selected" : false,
+"canonicalName" : "tacrolimus1 (Interactive) gastritis1",
+"SUID" : 15,
+"name" : "tacrolimus1 (Interactive) gastritis1",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "tacrolimus1 (Interactive) gastritis1"
+},
+"selected" : false
+}
+,
+{"data" : {
+"id" : "16",
+"source" : "tacrolimus1",
+"target" : "dyspnea1",
+"selected" : false,
+"canonicalName" : "tacrolimus1 (Interactive) dyspnea1",
+"SUID" : 16,
+"name" : "tacrolimus1 (Interactive) dyspnea1",
+"interaction" : "Interactive",
+"shared_interaction" : "Interactive",
+"shared_name" : "tacrolimus1 (Interactive) dyspnea1"
+},
+"selected" : false
+}
+
+,
+{"data" : {
+"id" : "17",
+"source" : "docetaxel1",
+"target" : "hyperesthesia1",
+"selected" : false,
+"canonicalName" : "docetaxel1 (bp) hyperesthesia1",
+"SUID" : 17,
+"name" : "docetaxel1 (bp) hyperesthesia1",
+"interaction" : "bp",
+"shared_interaction" : "bp",
+"shared_name" : "docetaxel1 (bp) hyperesthesia1"
+},
+"selected" : false
+},
+
+    {"data" : {
+"id" : "18",
+"source" : "docetaxel1",
+"target" : "ventricular tachycardia1",
+"selected" : false,
+"canonicalName" : "docetaxel1 (bp) ventricular tachycardia1",
+"SUID" : 18,
+"name" : "docetaxel1 (bp) ventricular tachycardia1",
+"interaction" : "bp",
+"shared_interaction" : "bp",
+"shared_name" : "docetaxel1 (bp) ventricular tachycardia1"
+},
+"selected" : false
+    },
+
+        {"data" : {
+"id" : "19",
+"source" : "docetaxel1",
+"target" : "gastritis1",
+"selected" : false,
+"canonicalName" : "docetaxel1 (bp) gastritis1",
+"SUID" : 19,
+"name" : "docetaxel1 (bp) gastritis1",
+"interaction" : "bp",
+"shared_interaction" : "bp",
+"shared_name" : "docetaxel1 (bp) gastritis1"
+},
+"selected" : false
+	},
+
+            {"data" : {
+"id" : "20",
+"source" : "docetaxel1",
+"target" : "hyperglycemia1",
+"selected" : false,
+"canonicalName" : "docetaxel1 (bp) hyperglycemia1",
+"SUID" : 20,
+"name" : "docetaxel1 (bp) hyperglycemia1",
+"interaction" : "bp",
+"shared_interaction" : "bp",
+"shared_name" : "docetaxel1 (bp) hyperglycemia1"
+},
+"selected" : false
+	    },
+
+    {"data" : {
+"id" : "21",
+"source" : "tacrolimus1",
+"target" : "ventricular tachycardia1",
+"selected" : false,
+"canonicalName" : "tacrolimus1 (bp) ventricular tachycardia1",
+"SUID" : 21,
+"name" : "tacrolimus1 (bp) ventricular tachycardia1",
+"interaction" : "bp",
+"shared_interaction" : "bp",
+"shared_name" : "tacrolimus1 (bp) ventricular tachycardia1"
+},
+"selected" : false
+    },
+
+
+ {"data" : {
+"id" : "22",
+"source" : "paclitaxel1",
+"target" : "atrial flutter1",
+"selected" : false,
+"canonicalName" : "paclitaxel1 (bp) atrial flutter1",
+"SUID" : 22,
+"name" : "paclitaxel1 (bp) atrial flutter1",
+"interaction" : "bp",
+"shared_interaction" : "bp",
+"shared_name" : "paclitaxel1 (bp) atrial flutter1"
+},
+"selected" : false
+ }  ,
+
+     {"data" : {
+"id" : "23",
+"source" : "paclitaxel1",
+"target" : "gastritis1",
+"selected" : false,
+"canonicalName" : "paclitaxel1 (bp) gastritis1",
+"SUID" : 23,
+"name" : "paclitaxel1 (bp) gastritis1",
+"interaction" : "bp",
+"shared_interaction" : "bp",
+"shared_name" : "paclitaxel1 (bp) gastritis1"
+},
+"selected" : false
+}   
+    ,
+
+         {"data" : {
+"id" : "24",
+"source" : "paclitaxel1",
+"target" : "dyspnea1",
+"selected" : false,
+"canonicalName" : "paclitaxel1 (bp) dyspnea1",
+"SUID" : 24,
+"name" : "paclitaxel1 (bp) dyspnea1",
+"interaction" : "bp",
+"shared_interaction" : "bp",
+"shared_name" : "paclitaxel1 (bp) dyspnea1"
+},
+"selected" : false
+}   
+
+    ,
+
+         {"data" : {
+"id" : "25",
+"source" : "paclitaxel1",
+"target" : "epistaxis1",
+"selected" : false,
+"canonicalName" : "paclitaxel1 (bp) epistaxis1",
+"SUID" : 25,
+"name" : "paclitaxel1 (bp) epistaxis1",
+"interaction" : "bp",
+"shared_interaction" : "bp",
+"shared_name" : "paclitaxel1 (bp) epistaxis1"
+},
+"selected" : false
+}   
+
+    
+
+
+
+    
+]
+}
+}
