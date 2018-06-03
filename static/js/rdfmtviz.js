@@ -30,7 +30,7 @@ $(document).ready(function() {
 		        console.log("linked to");
 			console.log(linkedto);
 			for (lk in linkedto){
-
+			    console.log(lk)
 				n =  linkedto[lk];
 		  		li = n.lastIndexOf("/");
 		  	  	lkname = n.substring(li+1);
@@ -68,9 +68,6 @@ $(document).ready(function() {
 
 }
 
-//Useful functions for array handling
-Array.prototype.contains = function(a) { return this.indexOf(a) != -1 };
-Array.prototype.remove = function(a) {if (this.contains(a)){ return this.splice(this.indexOf(a),1)}};
 
 //draw the DAG graph using d3.js
 function drawWhyDAG(nodes, links){
